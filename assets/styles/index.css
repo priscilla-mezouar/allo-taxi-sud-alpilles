@@ -227,6 +227,9 @@ footer ul li a:hover {
 .card a {
   color: #fff;
 }
+.card img {
+  filter: drop-shadow(0 0 10px #000);
+}
 
 .card-yellow {
   background: #ffe14d;
