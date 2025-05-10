@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "comfortaa";
+  src: url(../fonts/comfortaa.ttf);
+}
+@font-face {
+  font-family: "raleway";
+  src: url(../fonts/raleway.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "raleway", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: #1b1b1e;
+  color: #d7d4cc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "comfortaa", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+p,
+a,
+button {
+  font-size: 1rem;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 50px 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+header i {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 1300px) {
+  header {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    grid-template-columns: 2fr 1fr 3fr;
+  }
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo img {
+  width: 100%;
+  transition: 0.2s ease;
+}
+header .logo img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #fff);
+}
+header .navigation {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+header .navigation .toogle-nav {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  header .navigation .toogle-nav {
+    justify-content: end;
+    text-align: left;
+    position: absolute;
+    display: none;
+  }
+}
+header .navigation .toogle-nav i {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+}
+header .navigation .toogle-nav #closenav {
+  display: none;
+}
+@media screen and (max-width: 1300px) {
+  header .navigation nav {
+    display: none;
+    width: 100%;
+  }
+}
+header .navigation nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1300px) {
+  header .navigation nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    background: #ffe14d;
+  }
+}
+header .navigation nav ul li {
+  list-style: none;
+}
+header .navigation nav ul li a {
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  transition: 0.2s ease;
+  border: 2px solid transparent;
+}
+header .navigation nav ul li a:hover {
+  border: 2px solid #000;
+  background: #ffe14d;
+  color: #000;
+  transition: 0.2s ease;
+  box-shadow: inset 0 0 5px #000;
+}
+header .button-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+header .button-header button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .button-header button a {
+  padding: 10px 20px;
+}
+
+footer {
+  width: 100%;
+  padding: 0 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    display: block;
+    text-align: center;
+  }
+}
+footer p {
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 600px) {
+  footer p {
+    padding-bottom: 30px;
+  }
+}
+footer p a {
+  font-size: 0.8rem;
+  color: #fff;
+  font-weight: bold;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li {
+  list-style: none;
+  padding: 0 5px;
+}
+footer ul li a {
+  padding: 10px;
+  color: #ffe14d;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+footer ul li a:hover {
+  background: #ffe14d;
+  color: #000;
+  box-shadow: inset 0 0 5px #000;
+}
+
+.card,
+.card-yellow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 20px #000;
+}
+
+.card {
+  background: #27272b;
+}
+.card h1,
+.card h2,
+.card h3,
+.card h4,
+.card h5,
+.card h6 {
+  color: #ffe14d;
+}
+.card p,
+.card a {
+  color: #fff;
+}
+
+.card-yellow {
+  background: #ffe14d;
+}
+.card-yellow h1,
+.card-yellow h2,
+.card-yellow h3,
+.card-yellow h4,
+.card-yellow h5,
+.card-yellow h6 {
+  color: #1b1b1e;
+}
+.card-yellow p,
+.card-yellow a {
+  color: #1b1b1e;
+}
+
+.button-simple {
+  padding: 5px 20px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  background: #ffe14d;
+  box-shadow: 0 0 5px #000;
+  color: #000;
+  transition: 0.2s ease;
+}
+.button-simple:hover {
+  box-shadow: inset 0 0 5px #000;
+}
+
+.button-link {
+  background: none;
+  border: none;
+}
+.button-link a {
+  padding: 5px 20px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  box-shadow: 0 0 5px #000;
+  background: #ffe14d;
+  color: #000;
+  transition: 0.2s ease;
+}
+.button-link a:hover {
+  box-shadow: inset 0 0 5px #000;
+}/*# sourceMappingURL=index.css.map */
