@@ -277,4 +277,38 @@
       }
     }
   }
+
+  #demande-de-devis {
+    h2 {
+      padding: 0 !important;
+    }
+    .question {
+      cursor: pointer;
+      transition: 0.2s ease;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+    .reponse {
+      display: none;
+      padding-left: 20px;
+      border-left: 1px solid $white;
+      padding-bottom: 20px;
+      p {
+        color: $bg-card;
+      }
+
+      ul {
+        li {
+          list-style-position: inside;
+          color: $bg-card;
+        }
+      }
+
+      a {
+        font-weight: bold;
+      }
+    }
+  }
 }

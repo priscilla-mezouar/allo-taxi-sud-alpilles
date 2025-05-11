@@ -538,4 +538,30 @@ footer ul li a:hover {
   height: 100%;
   position: absolute;
   border-top: 3px solid #1b1b1e;
+}
+.home #demande-de-devis h2 {
+  padding: 0 !important;
+}
+.home #demande-de-devis .question {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.home #demande-de-devis .question:hover {
+  font-weight: bold;
+}
+.home #demande-de-devis .reponse {
+  display: none;
+  padding-left: 20px;
+  border-left: 1px solid #fff;
+  padding-bottom: 20px;
+}
+.home #demande-de-devis .reponse p {
+  color: #27272b;
+}
+.home #demande-de-devis .reponse ul li {
+  list-style-position: inside;
+  color: #27272b;
+}
+.home #demande-de-devis .reponse a {
+  font-weight: bold;
 }/*# sourceMappingURL=index.css.map */
