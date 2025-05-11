@@ -1,0 +1,280 @@
+.home {
+  #hero,
+  #tarifs-et-forfaits,
+  #reservation,
+  #nos-vehicules,
+  #actualites-et-blog {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+    padding: 0 !important;
+
+    .text {
+      padding: 50px;
+
+      p {
+        padding-bottom: 30px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+
+  #hero {
+    h2 {
+      padding-bottom: 0;
+    }
+  }
+
+  #services {
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      .service-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: inset 0 0 20px $black;
+        text-align: center;
+
+        i {
+          padding-bottom: 20px;
+          color: $color1;
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+
+  #tarifs-et-forfaits {
+    .grid-tarif {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: inset 0 0 20px $black;
+        text-align: left;
+
+        h3 {
+          color: $white;
+        }
+
+        p {
+          padding-bottom: 0;
+          text-align: justify;
+        }
+      }
+    }
+  }
+
+  #reservation {
+    grid-template-columns: 40% 60% !important;
+
+    img {
+      border-radius: 10px 0 0 10px;
+    }
+
+    .grid-reservation {
+      div {
+        padding: 20px 20px 0;
+        margin: 20px 0;
+        border-left: 10px solid $bg;
+        border-radius: 0;
+
+        &:nth-child(2) {
+          margin-left: 40px;
+        }
+
+        &:nth-child(3) {
+          margin-left: 80px;
+        }
+      }
+    }
+  }
+
+  #a-propos {
+    .grid-a-propos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      .item-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: inset 0 0 20px $black;
+        text-align: center;
+
+        span {
+          padding: 30px;
+          margin-bottom: 30px;
+          border-radius: 50%;
+          background: $bg;
+          width: 150px;
+          height: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $color1;
+          font-size: 3rem;
+          box-shadow: 0 0 10px $black;
+        }
+      }
+    }
+    .text {
+      p {
+        margin-top: 50px;
+        text-align: justify;
+      }
+    }
+  }
+
+  #zones {
+    .grid-zone {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .zone-item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  #nos-vehicules {
+    grid-template-columns: 40% 60%;
+    padding: 0 !important;
+
+    img {
+      border-radius: 10px 0 0 10px;
+    }
+
+    #grid-auto {
+      padding: 50px;
+
+      #item-auto {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        justify-content: center;
+        align-items: center;
+        .ico-auto {
+          width: 100px;
+          height: 150px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          clip-path: polygon(50% 20%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+          background: $bg;
+
+          i {
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+
+    button {
+      margin-top: 50px;
+    }
+  }
+
+  #temoignages {
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+
+      .client-item {
+        box-shadow: inset 0 0 20px $black;
+        padding: 20px;
+        border-radius: 10px;
+
+        img {
+          width: 100%;
+          border-radius: 10px;
+          margin-bottom: 20px;
+        }
+
+        h3,
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #actualites-et-blog {
+    grid-template-columns: 40% 60%;
+    padding: 0 !important;
+
+    img {
+      border-radius: 10px 0 0 10px;
+    }
+
+    .text-actus {
+      padding: 50px;
+
+      .actu-item {
+        display: grid;
+        grid-template-columns: 10% 80%;
+        gap: 20px;
+        margin-top: 50px;
+        position: relative;
+
+        i {
+          background: $bg;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          font-size: 1.3rem;
+          box-shadow: 0 0 5px $black;
+
+          &:after {
+            content: "";
+            top: 40px;
+            height: 100%;
+            position: absolute;
+            border-left: 3px solid $bg;
+          }
+        }
+
+        h3 {
+          position: relative;
+          &:after {
+            content: "";
+            top: 50%;
+            left: -50px;
+            width: 50px;
+            height: 100%;
+            position: absolute;
+            border-top: 3px solid $bg;
+          }
+        }
+      }
+    }
+  }
+}

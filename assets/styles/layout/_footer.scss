@@ -18,8 +18,13 @@ footer {
 
     a {
       font-size: 0.8rem;
-      color: $white;
+      color: $color1;
       font-weight: bold;
+      transition: 0.2s ease;
+
+      &:hover {
+        color: $white;
+      }
     }
   }
 

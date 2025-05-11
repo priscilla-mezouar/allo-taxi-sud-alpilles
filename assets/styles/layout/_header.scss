@@ -41,11 +41,11 @@ header {
       display: none;
 
       @media screen and (max-width: 1300px) {
-        // display: flex;
+        display: flex;
         justify-content: end;
         text-align: left;
         position: absolute;
-        display: none;
+        // display: none;
       }
       i {
         font-size: 2rem;
@@ -107,7 +107,7 @@ header {
       justify-content: center;
       align-items: center;
       a {
-        padding: 10px 20px;
+        padding: 5px 20px;
       }
     }
   }

@@ -14,11 +14,13 @@
 
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
-  <body>
+  <body class="home">
     <header>
       <a href="./index.html">
         <div class="logo">
-          <img src="./assets/images/logo-allo-taxi.png" alt="Logo Allo Taxi" />
+          <img
+            src="./assets/images/logo-allo-taxi.png"
+            alt="Logo Allo Taxi Sud" />
         </div>
       </a>
       <div class="navigation">
@@ -26,6 +28,17 @@
           <i id="opennav" class="bi bi-list"></i>
           <i id="closenav" class="bi bi-x-circle"></i>
         </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="./index.html"><i class="bi bi-house"></i> </a>
+            </li>
+            <li><a href="#a-propos">Qui sommes-nous ?</a></li>
+            <li><a href="#services"> Nos services </a></li>
+            <li><a href="#nos-vehicules"> Nos véhicules </a></li>
+            <li><a href="#demande-de-devis"> Demande de Devis </a></li>
+          </ul>
+        </nav>
       </div>
       <div class="button-header">
         <button class="button-link">
@@ -36,14 +49,358 @@
       </div>
     </header>
     <main>
-      <section class="card">
-        <div style="text-align: center">
-          <img src="./assets/images/auto.png" alt="Voiture de taxi" />
-          <h1>Travaux en cours, mais toujours en course !</h1>
+      <section class="card" id="hero">
+        <div class="text">
+          <h1>Allo Taxi Sud Alpilles</h1>
+          <h2>Votre partenaire de confiance pour tous cos déplacements</h2>
           <p>
-            Notre site fait une petite pause au garage pour mieux vous conduire
-            demain ! <br /><br />En attendant, n'hésitez-pas à nous appeler !
+            Transport de qualité et ponctuel dans toute la région des Alpilles
+            (Tarascon, Fontvieille, St-Étienne-du-Grès & ses alentours).
           </p>
+          <button class="button-link">
+            <a href="#demande-de-devis">Demandez un devis</a>
+          </button>
+          <button class="button-link">
+            <a href="tel:+33667319832">Réservation express</a>
+          </button>
+        </div>
+        <img src="./assets/images/1.png" alt="Taxi de luxe dans les alpilles" />
+      </section>
+
+      <section class="card" id="services">
+        <h2>Nos services de transports</h2>
+        <div class="services-grid">
+          <div class="service-item">
+            <i class="bi bi-taxi-front"></i>
+            <h3>Taxis <br />& VTC</h3>
+            <p>
+              Services de taxis traditionnels pour vos trajets urbains et VTC
+              haut de gamme pour une expérience personnalisée et luxueuse.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="bi bi-airplane"></i>
+            <h3>Transferts Gares & Aéroports</h3>
+            <p>
+              Arrivez à l'heure pour votre train ou votre vol avec notre service
+              ponctuel de transfert vers toutes les gares et aéroports de la
+              région.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="bi bi-hospital"></i>
+            <h3>Transport Médical</h3>
+            <p>
+              Transport médical conventionné offrant confort et sécurité pour
+              vos rendez-vous médicaux, avec véhicules spécialement équipés.
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="bi bi-suitcase-lg"></i>
+            <h3>Tourisme & Évènements</h3>
+            <p>
+              Découvrez la région ou organisez le transport pour vos évènements
+              spéciaux avec nos services adaptés à vos besoins spécifiques.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="tarifs-et-forfaits">
+        <div class="text">
+          <h2>Tarifs et Forfaits</h2>
+          <div class="grid-tarif">
+            <div>
+              <h3>Transferts Aéroport & Gare</h3>
+              <p>
+                Tarifs fixes sans surprises pour tous vos transferts vers les
+                aéroports et gares de la région. Prix connus à l'avance pour une
+                tranquilité d'esprit totale.
+              </p>
+            </div>
+            <div>
+              <h3>Forfaits Personnalisés</h3>
+              <p>
+                Solutions sur mesure pour les entreprises, les partenaires et
+                les particuliers avec des besoins réguliers. B"énéficiez de
+                tarifs préférentiels adaptés à votre fréquence d'utilisation.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/images/2.png"
+          alt="Paiement taxi par carte bancaire" />
+      </section>
+
+      <section class="card" id="reservation">
+        <img
+          src="./assets/images/3.png"
+          alt="Personne qui regarde la localisation du taxi sur son téléphone" />
+        <div class="text">
+          <h2>Comment réserver votre taxi ?</h2>
+          <div class="grid-reservation">
+            <div class="item-reservation">
+              <h3>Choisissez votre méthode</h3>
+              <p>
+                Réservez en ligne via notre formulaire facile à utiliser ou
+                appelez notre centre d'appels disponible 24h/7j pour une
+                assistance personnalisée.
+              </p>
+            </div>
+            <div class="item-reservation">
+              <h3>Indiquez vos détails</h3>
+              <p>
+                Précisez vos adresses de départ et d'arrivée, la date, l'heure
+                et le nombre de passagers pour une organisation optimale de
+                votre trajet.
+              </p>
+            </div>
+            <div class="item-reservation">
+              <h3>Confirmation immédiate</h3>
+              <p>
+                Recevez une confirmation instantanée de votre réservation, avec
+                les détails de votre chauffeur et l'heure d'arrivée prévue.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="a-propos">
+        <h2>À propos du groupe Allo Taxi Sud</h2>
+        <div class="grid-a-propos">
+          <div class="item-text">
+            <span>15+</span>
+            <h3>Années d'expérience</h3>
+            <p>Plus d'une décennie d'expertise dans le transport local</p>
+          </div>
+          <div class="item-text">
+            <span>99%</span>
+            <h3>Clients satisfaits</h3>
+            <p>Une qualité de service exceptionnelle reconnue</p>
+          </div>
+          <div class="item-text">
+            <span>24/7</span>
+            <h3>Disponibilité</h3>
+            <p>À votre service à toute heure du jour et de la nuit</p>
+          </div>
+        </div>
+        <div class="text">
+          <p>
+            Entreprise locale, ancrée dans la région Sud, Allo Taxi Sud s'engage
+            pour la qualité, la sécurité et votre satisfaction. Notre équipe de
+            professionnels expérimentés est dédiée à vous offrir un service de
+            transport irréprochable.
+            <br /><br />
+            Allo Taxi Sud est bien plus qu'un simple service de taxi. Nous
+            sommes votre partenaire de confiance pour tous vos déplacements,
+            avec une équipe d'experts et une flotte de véhicules confortables.
+            Nos tarifs compétitifs et notre service de qualité, vous
+            garantissent une expérience de transport inoubliable.
+          </p>
+        </div>
+      </section>
+
+      <section class="card-yellow" id="zones">
+        <h2>Zone de service</h2>
+        <div class="grid-zone">
+          <div class="zone-item right-item">
+            <div>
+              <h3>Centres-villes</h3>
+              <p>
+                Couverture complète des principales agglomérations avec
+                disponibilité immédiate 24h/24.
+              </p>
+            </div>
+            <div>
+              <img
+                src="./assets/images/zone1.png"
+                alt="Une icône de bâtiment" />
+            </div>
+          </div>
+          <div class="zone-item left-item">
+            <div>
+              <img src="./assets/images/zone2.png" alt="Une icône d'arbre" />
+            </div>
+            <div>
+              <h3>Villages & Communes</h3>
+              <p>
+                Service étendu aux zones rurales et petites communes sur
+                réservation préalable.
+              </p>
+            </div>
+          </div>
+          <div class="zone-item right-item">
+            <div>
+              <h3>Gares ferroviaires</h3>
+              <p>
+                Présence garantie à toutes les gares TGV et régionales pour vos
+                arrivées et départs.
+              </p>
+            </div>
+            <div>
+              <img src="./assets/images/zone3.png" alt="Une icône de train" />
+            </div>
+          </div>
+          <div class="zone-item left-item">
+            <div>
+              <img src="./assets/images/zone4.png" alt="Une icône d'avion" />
+            </div>
+            <div>
+              <h3>Aéroport régionaux</h3>
+              <p>
+                Nous desservons l'ensemble des aéroports de la région Sud, avec
+                la garantie d'être à l'heure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="card" id="nos-vehicules">
+        <img src="./assets/images/4.png" alt="Un taxi sur la route" />
+        <div id="grid-auto">
+          <h2>Notre flotte de véhicules</h2>
+
+          <div>
+            <div id="item-auto">
+              <div class="ico-auto">
+                <i class="bi bi-car-front"></i>
+              </div>
+              <div>
+                <h3>Berlines confortables</h3>
+                <p>
+                  Véhicules élégants et spacieux, idéaux pour 1 à 4 passagers
+                  avec bagages standards.
+                </p>
+              </div>
+            </div>
+            <div id="item-auto">
+              <div class="ico-auto">
+                <i class="bi bi-people"></i>
+              </div>
+              <div>
+                <h3>Monospaces familiaux</h3>
+                <p>
+                  Parfaits pour les familles ou petits groupes jusqu'à 6
+                  personnes avec bagages.
+                </p>
+              </div>
+            </div>
+            <div id="item-auto">
+              <div class="ico-auto">
+                <i class="bi bi-person-wheelchair"></i>
+              </div>
+              <div>
+                <h3>Véhicules adaptés</h3>
+                <p>
+                  Équipements spéciaux pour personnes à mobilité réduite,
+                  accessibilité et confort garantis.
+                </p>
+              </div>
+            </div>
+            <button class="button-link">
+              <a href="./nos-vehicules.html">Découvrir nos véhicules</a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="card" id="temoignages">
+        <h2>Témoignages clients</h2>
+        <div class="clients-grid">
+          <div class="client-item">
+            <img src="./assets/images/testimonial1.png" alt="Une cadre" />
+            <h3>Sophie M., Cadre</h3>
+            <p>
+              "J'utilise Allo Taxi Sud pour mes déplacements professionnels
+              depuis 3 ans. Ponctualité irréprochable et chauffeurs toujours
+              courtois. Un service 5 étoiles que je recommande vivement !"
+            </p>
+          </div>
+          <div class="client-item">
+            <img src="./assets/images/testimonial2.png" alt="Des retraités" />
+            <h3>Pierre et Marie D., Retraités</h3>
+            <p>
+              "Le transport médical d'Allo Taxi Sud nous a changé la vie. Les
+              chauffeurs sont attentionnées et nous aident toujours avec nos
+              bagages. Un confort inégalé pour nos rendez-vous médicaux."
+            </p>
+          </div>
+          <div class="client-item">
+            <img
+              src="./assets/images/testimonial3.png"
+              alt="La famille Laurent" />
+            <h3>Famille Laurent</h3>
+            <p>
+              "Service impeccable pour notre transport à l'aéroport avec nos
+              enfants. Véhicule spacieux, siège bébé fourni comme demandé et
+              prix fixe sans surprise. Parfait !"
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="card" id="actualites-et-blog">
+        <img
+          src="./assets/images/5.png"
+          alt="Une personne assise dans un café qui regarde sa tablette sur laquelle on peut voir des trajets de bus." />
+        <div class="text-actus">
+          <h2>Actualités et blog</h2>
+          <a href="./guide-des-festivites-alpilles-2025.html">
+            <div class="actu-item">
+              <i class="bi bi-tags"></i>
+              <div>
+                <h3>Guide des festivités Alpilles Été 2025</h3>
+                <p>
+                  Cet été, les Alpilles seront le théâtre de nombreuses
+                  festivités à ne pas manquer : concerts, dégustations de vin,
+                  marchés artisanaux et feux d'artifice. Notre guide vous aidera
+                  à planifier votre séjour pour profiter pleinement de cette
+                  saison estivale riche en évènements culturels et
+                  divertissements festifs.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="./nouveaux-partenariats-2025.html">
+            <div class="actu-item">
+              <i class="bi bi-person-hearts"></i>
+              <div>
+                <h3>Nouveaux partenariats</h3>
+                <p>
+                  Allo Taxi Sud S'associe avec les hôtels locaux pour offrir des
+                  tarifs préférentiels aux touristes. Demandez plus
+                  d'informations à la réception de votre hôtel partenaire.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="./guide-des-vignobles-2025.html">
+            <div class="actu-item">
+              <i class="bi bi-pin-map"></i>
+              <div>
+                <h3>Guide des Vignobles 2025</h3>
+                <p>
+                  Découvrez notre article sur les meilleurs circuits de
+                  dégustation de vin dans la région, avec nos recommandations de
+                  domaine à ne pas manquer.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="./initiative-ecologique.html">
+            <div class="actu-item">
+              <i class="bi bi-ev-front"></i>
+              <div>
+                <h3>Initiative écologique</h3>
+                <p>
+                  Allo Taxi Sud s'engage pour l'environnement avec
+                  l'introduction progressive de véhicules hybrides et
+                  électriques dans notre flotte. Optez pour un trajet
+                  éco-responsable.
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
       </section>
     </main>
