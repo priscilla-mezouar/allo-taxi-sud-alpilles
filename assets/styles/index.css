@@ -539,29 +539,89 @@ footer ul li a:hover {
   position: absolute;
   border-top: 3px solid #1b1b1e;
 }
-.home #demande-de-devis h2 {
+.home #faq h2 {
   padding: 0 !important;
 }
-.home #demande-de-devis .question {
+.home #faq .question {
   cursor: pointer;
   transition: 0.2s ease;
 }
-.home #demande-de-devis .question:hover {
+.home #faq .question:hover {
   font-weight: bold;
 }
-.home #demande-de-devis .reponse {
+.home #faq .reponse {
   display: none;
   padding-left: 20px;
   border-left: 1px solid #fff;
   padding-bottom: 20px;
 }
-.home #demande-de-devis .reponse p {
+.home #faq .reponse p {
   color: #27272b;
 }
-.home #demande-de-devis .reponse ul li {
+.home #faq .reponse ul li {
   list-style-position: inside;
   color: #27272b;
 }
-.home #demande-de-devis .reponse a {
+.home #faq .reponse a {
   font-weight: bold;
+}
+.home #demande-de-devis h2 {
+  margin-bottom: 0;
+}
+.home #demande-de-devis form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffe14d;
+  padding: 20px 50px;
+  box-shadow: inset 0 0 20px #000;
+  border-radius: 10px;
+}
+.home #demande-de-devis form label {
+  width: 100%;
+  color: #000;
+  display: block;
+  padding: 10px 0;
+}
+.home #demande-de-devis form input,
+.home #demande-de-devis form select,
+.home #demande-de-devis form textarea {
+  border-radius: 0px;
+  background: none;
+  transition: 0.2s ease;
+}
+.home #demande-de-devis form input:hover, .home #demande-de-devis form input:focus, .home #demande-de-devis form input:active,
+.home #demande-de-devis form select:hover,
+.home #demande-de-devis form select:focus,
+.home #demande-de-devis form select:active,
+.home #demande-de-devis form textarea:hover,
+.home #demande-de-devis form textarea:focus,
+.home #demande-de-devis form textarea:active {
+  outline: none;
+}
+.home #demande-de-devis form input,
+.home #demande-de-devis form select {
+  border-bottom: 1px solid #1b1b1e;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.home #demande-de-devis form input:hover, .home #demande-de-devis form input:focus, .home #demande-de-devis form input:active,
+.home #demande-de-devis form select:hover,
+.home #demande-de-devis form select:focus,
+.home #demande-de-devis form select:active {
+  border-bottom: 2px solid #000;
+}
+.home #demande-de-devis form select {
+  padding: 10px;
+}
+.home #demande-de-devis form textarea {
+  display: block;
+  margin-bottom: 30px;
+  padding: 0 10px;
+  border: 1px solid #1b1b1e;
+  border-radius: 5px;
+}
+.home #demande-de-devis form button {
+  padding: 0;
 }/*# sourceMappingURL=index.css.map */
