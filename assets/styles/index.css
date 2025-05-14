@@ -739,6 +739,9 @@ footer ul li a:hover {
   padding: 10px 20px;
   margin: 0 10px;
 }
+.articles ul li {
+  list-style-position: inside;
+}
 .articles h2 {
   text-align: center;
 }
