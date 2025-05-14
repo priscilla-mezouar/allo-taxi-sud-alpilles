@@ -37,3 +37,48 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// Étapes formulaire de contact
+const steps = document.querySelectorAll(".form-step");
+const nextBtns = document.querySelectorAll(".next");
+const prevBtns = document.querySelectorAll(".prev");
+let currentStep = 0;
+
+function showStep(step) {
+  steps.forEach((s, i) => {
+    s.classList.toggle("active", i === step);
+  });
+}
+
+nextBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const currentFields = steps[currentStep].querySelectorAll(
+      "input, select, textarea"
+    );
+    let valid = true;
+
+    for (const field of currentFields) {
+      if (!field.checkValidity()) {
+        field.reportValidity(); // Affiche le message de l'input HTML5
+        valid = false;
+        break;
+      }
+    }
+
+    if (valid && currentStep < steps.length - 1) {
+      currentStep++;
+      showStep(currentStep);
+    }
+  });
+});
+
+prevBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (currentStep > 0) {
+      currentStep--;
+      showStep(currentStep);
+    }
+  });
+});
+
+showStep(currentStep);

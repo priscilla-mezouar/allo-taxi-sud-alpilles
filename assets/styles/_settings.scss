@@ -36,6 +36,7 @@ $body-font: "raleway", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 body {
   background: $bg;
   color: $text;
+  position: relative;
 }
 
 h1,

@@ -1,0 +1,29 @@
+.button-call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  background: $color1;
+  box-shadow: 0 0 10px $black;
+  color: $black;
+  border-radius: 50%;
+  transition: 0.2s ease;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 2.2rem;
+      color: black;
+    }
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 10px $black;
+  }
+}

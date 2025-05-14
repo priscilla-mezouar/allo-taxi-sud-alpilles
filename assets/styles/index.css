@@ -17,6 +17,7 @@
 body {
   background: #1b1b1e;
   color: #d7d4cc;
+  position: relative;
 }
 
 h1,
@@ -108,23 +109,23 @@ header .navigation {
   justify-content: end;
   align-items: center;
 }
-header .navigation .toogle-nav {
+header .navigation .toggle-nav {
   display: none;
 }
 @media screen and (max-width: 1300px) {
-  header .navigation .toogle-nav {
+  header .navigation .toggle-nav {
     display: flex;
     justify-content: end;
     text-align: left;
     position: absolute;
   }
 }
-header .navigation .toogle-nav i {
+header .navigation .toggle-nav i {
   font-size: 2rem;
   color: #fff;
   text-shadow: 0 0 10px #000;
 }
-header .navigation .toogle-nav #closenav {
+header .navigation .toggle-nav #closenav {
   display: none;
 }
 @media screen and (max-width: 1300px) {
@@ -272,6 +273,13 @@ footer ul li a:hover {
   color: #1b1b1e;
 }
 
+.cta {
+  text-align: center;
+}
+.cta p {
+  margin-bottom: 50px;
+}
+
 .button-simple {
   padding: 10px 20px;
   border: 2px solid #000;
@@ -286,20 +294,63 @@ footer ul li a:hover {
 }
 
 .button-link {
-  background: none;
-  border: none;
-}
-.button-link a {
   padding: 10px 20px;
   border: 2px solid #000;
   border-radius: 50px;
   box-shadow: 0 0 5px #000;
   background: #ffe14d;
-  color: #000;
+  color: #000 !important;
   transition: 0.2s ease;
 }
-.button-link a:hover {
+.button-link:hover {
   box-shadow: inset 0 0 5px #000;
+}
+
+.button-call {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 5%;
+  right: 2%;
+  background: #ffe14d;
+  box-shadow: 0 0 10px #000;
+  color: #000;
+  border-radius: 50%;
+  transition: 0.2s ease;
+}
+.button-call a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-call a i {
+  font-size: 2.2rem;
+  color: black;
+}
+.button-call:hover {
+  box-shadow: inset 0 0 10px #000;
+}
+
+.title-page {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffe14d;
+}
+
+.intro {
+  width: 80%;
+  margin: 0 auto 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 .home #hero,
@@ -470,9 +521,6 @@ footer ul li a:hover {
 .home #nos-vehicules #grid-auto #item-auto .ico-auto i {
   font-size: 2.2rem;
 }
-.home #nos-vehicules button {
-  margin-top: 50px;
-}
 .home #temoignages .clients-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -565,63 +613,154 @@ footer ul li a:hover {
 .home #faq .reponse a {
   font-weight: bold;
 }
-.home #demande-de-devis h2 {
-  margin-bottom: 0;
+
+#demande-de-devis #demande-grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 50px;
+  gap: 20px;
 }
-.home #demande-de-devis form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background: #ffe14d;
-  padding: 20px 50px;
-  box-shadow: inset 0 0 20px #000;
+#demande-de-devis #demande-grid section {
+  margin: 0 !important;
+}
+#demande-de-devis form {
+  padding: 0 50px 20px;
   border-radius: 10px;
 }
-.home #demande-de-devis form label {
+#demande-de-devis form .form-step {
+  display: none;
+}
+#demande-de-devis form .form-step.active {
+  display: block;
+}
+#demande-de-devis form label {
   width: 100%;
   color: #000;
   display: block;
   padding: 10px 0;
 }
-.home #demande-de-devis form input,
-.home #demande-de-devis form select,
-.home #demande-de-devis form textarea {
+#demande-de-devis form input,
+#demande-de-devis form select,
+#demande-de-devis form textarea {
   border-radius: 0px;
   background: none;
   transition: 0.2s ease;
 }
-.home #demande-de-devis form input:hover, .home #demande-de-devis form input:focus, .home #demande-de-devis form input:active,
-.home #demande-de-devis form select:hover,
-.home #demande-de-devis form select:focus,
-.home #demande-de-devis form select:active,
-.home #demande-de-devis form textarea:hover,
-.home #demande-de-devis form textarea:focus,
-.home #demande-de-devis form textarea:active {
+#demande-de-devis form input:hover, #demande-de-devis form input:focus, #demande-de-devis form input:active,
+#demande-de-devis form select:hover,
+#demande-de-devis form select:focus,
+#demande-de-devis form select:active,
+#demande-de-devis form textarea:hover,
+#demande-de-devis form textarea:focus,
+#demande-de-devis form textarea:active {
   outline: none;
 }
-.home #demande-de-devis form input,
-.home #demande-de-devis form select {
+#demande-de-devis form input,
+#demande-de-devis form select {
+  width: 100%;
   border-bottom: 1px solid #1b1b1e;
   border-top: none;
   border-left: none;
   border-right: none;
 }
-.home #demande-de-devis form input:hover, .home #demande-de-devis form input:focus, .home #demande-de-devis form input:active,
-.home #demande-de-devis form select:hover,
-.home #demande-de-devis form select:focus,
-.home #demande-de-devis form select:active {
+#demande-de-devis form input:hover, #demande-de-devis form input:focus, #demande-de-devis form input:active,
+#demande-de-devis form select:hover,
+#demande-de-devis form select:focus,
+#demande-de-devis form select:active {
   border-bottom: 2px solid #000;
 }
-.home #demande-de-devis form select {
+#demande-de-devis form select {
   padding: 10px;
 }
-.home #demande-de-devis form textarea {
+#demande-de-devis form textarea {
   display: block;
-  margin-bottom: 30px;
   padding: 0 10px;
   border: 1px solid #1b1b1e;
   border-radius: 5px;
+  width: 100%;
 }
-.home #demande-de-devis form button {
-  padding: 0;
+#demande-de-devis form .flex-box {
+  display: flex;
+  justify-content: space-between;
+}
+#demande-de-devis form .flex-box button {
+  margin-top: 50px;
+  padding: 5px 20px;
+}
+#demande-de-devis #coordonnes .item-contact {
+  margin-bottom: 50px;
+}
+#demande-de-devis #coordonnes .item-contact .title-item {
+  display: grid;
+  grid-template-columns: 50px 80%;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+#demande-de-devis #coordonnes .item-contact .title-item i {
+  width: 50px;
+  height: 50px;
+  background: #ffe14d;
+  font-size: 2rem;
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px #000;
+}
+#demande-de-devis #coordonnes .item-contact .title-item h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#demande-de-devis #coordonnes .item-contact ul li {
+  list-style: none;
+}
+#demande-de-devis #coordonnes .item-contact ul li i {
+  font-size: 1.5rem;
+  color: #ffe14d;
+  margin-right: 10px;
+}
+#demande-de-devis #coordonnes .item-contact ul li span {
+  color: #ffe14d;
+  font-weight: bold;
+}
+
+.articles .menu-villes {
+  padding: 20px;
+}
+.articles .menu-villes ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articles .menu-villes ul li {
+  list-style: none;
+}
+.articles .menu-villes ul li a {
+  padding: 10px 20px;
+  margin: 0 10px;
+}
+.articles h2 {
+  text-align: center;
+}
+.articles h3 {
+  padding: 50px 0;
+  margin: 0;
+}
+.articles h3:first-of-type {
+  padding: 0 0 50px;
+}
+.articles .grid-events {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.articles .grid-events .event-item {
+  box-shadow: inset 0 0 10px #000;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

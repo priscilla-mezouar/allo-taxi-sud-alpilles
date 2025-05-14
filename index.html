@@ -3,11 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titre et description -->
     <title>
-      Allo Taxi Sud Alpilles - Votre taxi 7 jours/7 à Tarascon, Fontvieille
-      Saint-Étienne-du-Grès & les Alpilles
+      Allo Taxi Sud Alpilles – Taxi 7j/7 dans les Alpilles & environs
     </title>
-    <link rel="shortcut icon" href="./assets/images/allo-taxi-favicon.png" />
+    <meta
+      name="description"
+      content="Allo Taxi Sud vous accompagne 7j/7 dans tous vos déplacements à Tarascon, Fontvieille, Saint-Étienne-du-Grès et dans les Alpilles. Taxis, transferts aéroports, gares, tourisme, évènements, transport médical." />
+    <meta
+      name="keywords"
+      content="taxi Tarascon, taxi Fontvieille, taxi Saint-Étienne-du-Grès, taxi Alpilles, VTC Alpilles, transfert aéroport, taxi gare, transport médical, taxi tourisme, Allo Taxi Sud" />
+    <meta name="author" content="Allo Taxi Sud" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.allo-taxi-sud-alpilles.com/" />
+    <meta name="language" content="fr" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/allo-taxi-favicon.png"
+      type="image/png" />
+
+    <!-- Open Graph (Facebook & LinkedIn) -->
+    <meta
+      property="og:title"
+      content="Allo Taxi Sud Alpilles – Taxi 7j/7 Tarascon, Fontvieille, Saint-Étienne-du-Grès et les Alpilles" />
+    <meta
+      property="og:description"
+      content="Transport de qualité 24h/24 et 7j/7 sur réservation dans les Alpilles : Taxis, transferts aéroports, gares, tourisme, évènements, transport médical." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.allo-taxi-sud-alpilles.com/" />
+    <meta
+      property="og:image"
+      content="https://www.allo-taxi-sud-alpilles.com/assets/images/logo-allo-taxi.png" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Allo Taxi Sud Alpilles – Votre taxi de confiance 7j/7" />
+    <meta
+      name="twitter:description"
+      content="Besoin d’un taxi dans les Alpilles ? Contactez Allo Taxi Sud : service de transport fiable, ponctuel et confortable." />
+    <meta
+      name="twitter:image"
+      content="https://www.allo-taxi-sud-alpilles.com/assets/images/logo-allo-taxi.png" />
+    <meta name="twitter:site" content="@AlloTaxiSud" />
+
+    <!-- PWA / Apple mobile settings -->
+    <meta name="apple-mobile-web-app-title" content="Allo Taxi Sud" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#1b1b1e" />
+
+    <!-- Styles -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" />
@@ -20,11 +70,12 @@
         <div class="logo">
           <img
             src="./assets/images/logo-allo-taxi.png"
+            loading="lazy"
             alt="Logo Allo Taxi Sud" />
         </div>
       </a>
       <div class="navigation">
-        <div class="toogle-nav">
+        <div class="toggle-nav">
           <i id="opennav" class="bi bi-list"></i>
           <i id="closenav" class="bi bi-x-circle"></i>
         </div>
@@ -36,35 +87,34 @@
             <li><a href="#a-propos">Qui sommes-nous ?</a></li>
             <li><a href="#services"> Nos services </a></li>
             <li><a href="#nos-vehicules"> Nos véhicules </a></li>
-            <li><a href="#demande-de-devis"> Demande de Devis </a></li>
+            <li><a href="./demande-de-devis.html"> Demande de Devis </a></li>
           </ul>
         </nav>
       </div>
       <div class="button-header">
-        <button class="button-link">
-          <a href="tel:+33667319832"
-            ><i class="bi bi-phone-vibrate"></i> Contactez-nous</a
-          >
-        </button>
+        <a class="button-link" href="tel:+33667319832"
+          ><i class="bi bi-phone-vibrate"></i> Contactez-nous</a
+        >
       </div>
     </header>
-    <main>
+    <main role="main">
       <section class="card" id="hero">
         <div class="text">
           <h1>Allo Taxi Sud Alpilles</h1>
-          <h2>Votre partenaire de confiance pour tous cos déplacements</h2>
+          <h2>Votre partenaire de confiance pour tous vos déplacements</h2>
           <p>
             Transport de qualité et ponctuel dans toute la région des Alpilles
             (Tarascon, Fontvieille, St-Étienne-du-Grès & ses alentours).
           </p>
-          <button class="button-link">
-            <a href="#demande-de-devis">Demandez un devis</a>
-          </button>
-          <button class="button-link">
-            <a href="tel:+33667319832">Réservation express</a>
-          </button>
+          <a class="button-link" href="./demande-de-devis.html"
+            >Demandez un devis</a
+          >
+          <a class="button-link" href="tel:+33667319832">Réservation express</a>
         </div>
-        <img src="./assets/images/1.png" alt="Taxi de luxe dans les alpilles" />
+        <img
+          src="./assets/images/1.webp"
+          loading="lazy"
+          alt="Taxi de luxe dans les alpilles" />
       </section>
 
       <section class="card" id="services">
@@ -111,18 +161,18 @@
           <h2>Tarifs et Forfaits</h2>
           <div class="grid-tarif">
             <div>
-              <h3>Transferts Aéroport & Gare</h3>
+              <h3>Transferts Aéroports & Gares</h3>
               <p>
                 Tarifs fixes sans surprises pour tous vos transferts vers les
                 aéroports et gares de la région. Prix connus à l'avance pour une
-                tranquilité d'esprit totale.
+                tranquillité d'esprit totale.
               </p>
             </div>
             <div>
               <h3>Forfaits Personnalisés</h3>
               <p>
                 Solutions sur mesure pour les entreprises, les partenaires et
-                les particuliers avec des besoins réguliers. B"énéficiez de
+                les particuliers avec des besoins réguliers. Bénéficiez de
                 tarifs préférentiels adaptés à votre fréquence d'utilisation.
               </p>
             </div>
@@ -130,12 +180,14 @@
         </div>
         <img
           src="./assets/images/2.png"
+          loading="lazy"
           alt="Paiement taxi par carte bancaire" />
       </section>
 
       <section class="card" id="reservation">
         <img
           src="./assets/images/3.png"
+          loading="lazy"
           alt="Personne qui regarde la localisation du taxi sur son téléphone" />
         <div class="text">
           <h2>Comment réserver votre taxi ?</h2>
@@ -168,7 +220,7 @@
       </section>
 
       <section class="card" id="a-propos">
-        <h2>À propos du groupe Allo Taxi Sud</h2>
+        <h2>À propos d'Allo Taxi Sud</h2>
         <div class="grid-a-propos">
           <div class="item-text">
             <span>15+</span>
@@ -216,12 +268,16 @@
             <div>
               <img
                 src="./assets/images/zone1.png"
+                loading="lazy"
                 alt="Une icône de bâtiment" />
             </div>
           </div>
           <div class="zone-item left-item">
             <div>
-              <img src="./assets/images/zone2.png" alt="Une icône d'arbre" />
+              <img
+                src="./assets/images/zone2.png"
+                loading="lazy"
+                alt="Une icône d'arbre" />
             </div>
             <div>
               <h3>Villages & Communes</h3>
@@ -240,15 +296,21 @@
               </p>
             </div>
             <div>
-              <img src="./assets/images/zone3.png" alt="Une icône de train" />
+              <img
+                src="./assets/images/zone3.png"
+                loading="lazy"
+                alt="Une icône de train" />
             </div>
           </div>
           <div class="zone-item left-item">
             <div>
-              <img src="./assets/images/zone4.png" alt="Une icône d'avion" />
+              <img
+                src="./assets/images/zone4.png"
+                loading="lazy"
+                alt="Une icône d'avion" />
             </div>
             <div>
-              <h3>Aéroport régionaux</h3>
+              <h3>Aéroports régionaux</h3>
               <p>
                 Nous desservons l'ensemble des aéroports de la région Sud, avec
                 la garantie d'être à l'heure.
@@ -258,7 +320,10 @@
         </div>
       </section>
       <section class="card" id="nos-vehicules">
-        <img src="./assets/images/4.png" alt="Un taxi sur la route" />
+        <img
+          src="./assets/images/4.webp"
+          loading="lazy"
+          alt="Un taxi sur la route" />
         <div id="grid-auto">
           <h2>Notre flotte de véhicules</h2>
 
@@ -299,9 +364,6 @@
                 </p>
               </div>
             </div>
-            <button class="button-link">
-              <a href="./nos-vehicules.html">Découvrir nos véhicules</a>
-            </button>
           </div>
         </div>
       </section>
@@ -309,7 +371,10 @@
         <h2>Témoignages clients</h2>
         <div class="clients-grid">
           <div class="client-item">
-            <img src="./assets/images/testimonial1.png" alt="Une cadre" />
+            <img
+              src="./assets/images/testimonial1.png"
+              loading="lazy"
+              alt="Une cadre" />
             <h3>Sophie M., Cadre</h3>
             <p>
               "J'utilise Allo Taxi Sud pour mes déplacements professionnels
@@ -318,7 +383,10 @@
             </p>
           </div>
           <div class="client-item">
-            <img src="./assets/images/testimonial2.png" alt="Des retraités" />
+            <img
+              src="./assets/images/testimonial2.png"
+              loading="lazy"
+              alt="Des retraités" />
             <h3>Pierre et Marie D., Retraités</h3>
             <p>
               "Le transport médical d'Allo Taxi Sud nous a changé la vie. Les
@@ -329,6 +397,7 @@
           <div class="client-item">
             <img
               src="./assets/images/testimonial3.png"
+              loading="lazy"
               alt="La famille Laurent" />
             <h3>Famille Laurent</h3>
             <p>
@@ -342,10 +411,11 @@
       <section class="card" id="actualites-et-blog">
         <img
           src="./assets/images/5.png"
+          loading="lazy"
           alt="Une personne assise dans un café qui regarde sa tablette sur laquelle on peut voir des trajets de bus." />
         <div class="text-actus">
           <h2>Actualités et blog</h2>
-          <a href="./guide-des-festivites-alpilles-2025.html">
+          <a href="./actualites-blog/guide-des-festivites-alpilles-2025.html">
             <div class="actu-item">
               <i class="bi bi-tags"></i>
               <div>
@@ -361,7 +431,7 @@
               </div>
             </div>
           </a>
-          <a href="./nouveaux-partenariats-2025.html">
+          <!-- <a href="./actualites-blog/nouveaux-partenariats-2025.html">
             <div class="actu-item">
               <i class="bi bi-person-hearts"></i>
               <div>
@@ -373,8 +443,8 @@
                 </p>
               </div>
             </div>
-          </a>
-          <a href="./guide-des-vignobles-2025.html">
+          </a> -->
+          <a href="./actualites-blog/guide-des-vignobles-2025.html">
             <div class="actu-item">
               <i class="bi bi-pin-map"></i>
               <div>
@@ -387,7 +457,7 @@
               </div>
             </div>
           </a>
-          <a href="./initiative-ecologique.html">
+          <a href="./actualites-blog/initiative-ecologique.html">
             <div class="actu-item">
               <i class="bi bi-ev-front"></i>
               <div>
@@ -418,24 +488,27 @@
               </p>
               <ul>
                 <li>
+                  <a href="tel:0667319832">Allo Taxi Sud : 06.67.31.98.32</a>
+                </li>
+                <li>
                   <a href="tel:0667319832"
-                    >06.67.31.98.32 - Groupe Allo Taxi Sud</a
+                    >Allo Taxi Sud Alpilles : 06.67.31.98.32</a
                   >
                 </li>
                 <li>
                   <a href="tel:0617432959"
-                    >06.17.43.29.59 - Groupe Allo Taxi Fontvieille</a
-                  >
+                    >Allo Taxi Fontvieille : 06.17.43.29.59
+                  </a>
                 </li>
                 <li>
                   <a href="tel:0609958676"
-                    >06.09.95.86.76 - Groupe Allo Taxi Tarascon</a
+                    >Allo Taxi Tarascon : 06.09.95.86.76</a
                   >
                 </li>
                 <li>
                   <a href="tel:0610892802"
-                    >06.10.89.28.02 - Groupe Allo Taxi Saint-Étienne-du-Grès</a
-                  >
+                    >Allo Taxi Saint-Étienne-du-Grès : 06.10.89.28.02
+                  </a>
                 </li>
               </ul>
             </div>
@@ -487,139 +560,33 @@
                 </p>
                 <ul>
                   <li>
+                    <a href="tel:0667319832">Allo Taxi Sud : 06.67.31.98.32</a>
+                  </li>
+                  <li>
                     <a href="tel:0667319832"
-                      >06.67.31.98.32 - Groupe Allo Taxi Sud</a
+                      >Allo Taxi Sud Alpilles : 06.67.31.98.32</a
                     >
                   </li>
                   <li>
                     <a href="tel:0617432959"
-                      >06.17.43.29.59 - Groupe Allo Taxi Fontvieille</a
-                    >
+                      >Allo Taxi Fontvieille : 06.17.43.29.59
+                    </a>
                   </li>
                   <li>
                     <a href="tel:0609958676"
-                      >06.09.95.86.76 - Groupe Allo Taxi Tarascon</a
+                      >Allo Taxi Tarascon : 06.09.95.86.76</a
                     >
                   </li>
                   <li>
                     <a href="tel:0610892802"
-                      >06.10.89.28.02 - Groupe Allo Taxi
-                      Saint-Étienne-du-Grès</a
-                    >
+                      >Allo Taxi Saint-Étienne-du-Grès : 06.10.89.28.02
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="card" id="demande-de-devis">
-        <h2>Demande de devis</h2>
-        <form action="">
-          <label for="name">Nom et prénom : </label>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Nom et prénom" />
-
-          <label for="email"> Email : </label>
-          <input type="email" name="email" id="email" placeholder="Email" />
-
-          <label for="date-depart"> Date de départ : </label>
-          <input type="date" name="date-depart" id="date-depart" />
-
-          <label for="heure-depart">Heure de départ : </label>
-          <input type="time" name="heure-depart" id="heure-depart" />
-
-          <label for="lieu-depart"> Lieu de départ : </label>
-          <input type="text" name="lieu-depart" id="lieu-depart" />
-
-          <label for="lieu-destination"> Destination (lieu d'arrivée) : </label>
-          <input type="text" name="lieu-destination" id="lieu-destination" />
-
-          <label for="type-de-trajet"> Type de trajet : </label>
-          <select name="type-de-trajet" id="types-de-trajet">
-            <option value="selector" disabled selected>
-              Sélectionner un type de trajet
-            </option>
-            <option value="aller">Aller</option>
-            <option value="retour">Aller-retour</option>
-          </select>
-
-          <label for="heure-retour">
-            Heure de retour prévue (si retour uniquement) :
-          </label>
-          <input type="time" name="heure-retour" id="heure-retour" />
-
-          <label for="nb-passagers"> Nombre(s) de passager(s) : </label>
-          <input
-            type="number"
-            name="nb-passagers"
-            id="nb-passagers"
-            min="1"
-            max="100" />
-
-          <label for="nb-passagers-mobilite-reduite">
-            Nombre(s) de passager(s) à mobilité réduite :
-          </label>
-          <input
-            type="number"
-            name="nb-passagers-mobilite-reduite"
-            id="nb-passagers-mobilite-reduite"
-            min="0"
-            max="100" />
-
-          <label for="nb-enfants">
-            Nombre(s) d'enfant(s) de moins de 12 ans :
-          </label>
-          <input
-            type="number"
-            name="nb-enfants"
-            id="nb-enfants"
-            min="0"
-            max="100" />
-
-          <label for="nb-sieges-enfants">
-            Nombre(s) de siège(s) enfant nécessaire(s) :</label
-          >
-          <input
-            type="number"
-            name="nb-sieges-enfants"
-            id="nb-sieges-enfants"
-            min="0"
-            max="100" />
-
-          <label for="nb-bebe-enfants">
-            Nombre(s) de siège(s) bébé nécessaire(s) :
-          </label>
-          <input
-            type="number"
-            name="nb-bebe-enfants"
-            id="nb-bebe-enfants"
-            min="0"
-            max="100" />
-
-          <label for="nb-bagages"> Nombre(s) de bagage(s) : </label>
-          <input
-            type="number"
-            name="nb-bagages"
-            id="nb-bagages"
-            min="0"
-            max="100" />
-
-          <label for="message">Message : </label>
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Précisez votre demande si besoin..."></textarea>
-          <button class="button-simple" type="submit">
-            Envoyer ma demande
-          </button>
-        </form>
       </section>
     </main>
     <footer>
@@ -631,11 +598,11 @@
       </div>
       <div class="link-social">
         <ul>
-          <li>
+          <!-- <li>
             <a href="https://www.facebook.com/allotaxisud"
               ><i class="bi bi-facebook"></i>
             </a>
-          </li>
+          </li> -->
           <li>
             <a href="https://www.instagram.com/allotaxisud"
               ><i class="bi bi-instagram"></i>
@@ -654,6 +621,9 @@
         </ul>
       </div>
     </footer>
+    <div class="button-call">
+      <a href="tel:0667319832"><i class="bi bi-phone-vibrate"></i></a>
+    </div>
 
     <script src="./assets/js/index.js"></script>
   </body>
