@@ -482,8 +482,12 @@ footer ul li a:hover {
   padding-bottom: 0;
 }
 .home #hero a {
-  display: block;
   text-align: center;
+}
+@media screen and (max-width: 1100px) {
+  .home #hero a {
+    display: block;
+  }
 }
 .home #hero a:nth-of-type(2) {
   margin-top: 20px;
@@ -550,7 +554,6 @@ footer ul li a:hover {
 .home #tarifs-et-forfaits .grid-tarif div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 30px;
   border-radius: 10px;
@@ -567,7 +570,6 @@ footer ul li a:hover {
 }
 .home #tarifs-et-forfaits .grid-tarif div p {
   padding-bottom: 0;
-  text-align: justify;
 }
 @media screen and (max-width: 1100px) {
   .home #tarifs-et-forfaits .grid-tarif div p {
