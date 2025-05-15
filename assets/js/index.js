@@ -1,3 +1,4 @@
+// Système toggle Menu
 const openNav = document.querySelector("#opennav");
 const closeNav = document.querySelector("#closenav");
 const nav = document.querySelector("nav");
@@ -82,3 +83,14 @@ prevBtns.forEach((btn) => {
 });
 
 showStep(currentStep);
+
+//Button up
+
+window.addEventListener("scroll", () => {
+  const button = document.querySelector(".button-up");
+  if (window.scrollY > window.innerHeight * 0.01) {
+    button.classList.add("show");
+  } else {
+    button.classList.remove("show");
+  }
+});
