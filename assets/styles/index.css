@@ -203,13 +203,14 @@ header .button-header {
     margin-top: 30px;
   }
 }
-header .button-header button {
+header .button-header .button-link {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-header .button-header button a {
   padding: 5px 20px;
+}
+header .button-header .button-link i {
+  margin-right: 5px;
 }
 
 footer {

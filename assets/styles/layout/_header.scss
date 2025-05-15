@@ -133,12 +133,15 @@ header {
       justify-content: center;
       margin-top: 30px;
     }
-    button {
+
+    .button-link {
       display: flex;
       justify-content: center;
       align-items: center;
-      a {
-        padding: 5px 20px;
+      padding: 5px 20px;
+
+      i {
+        margin-right: 5px;
       }
     }
   }
