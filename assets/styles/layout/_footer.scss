@@ -51,4 +51,20 @@ footer {
       }
     }
   }
+
+  .link-legal {
+    font-size: 0.8rem;
+    color: $text;
+
+    a {
+      color: $text;
+      font-size: 0.8rem;
+      margin: 0 10px;
+      transition: 0.2s ease;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
 }

@@ -263,6 +263,19 @@ footer ul li a:hover {
   color: #000;
   box-shadow: inset 0 0 5px #000;
 }
+footer .link-legal {
+  font-size: 0.8rem;
+  color: #d7d4cc;
+}
+footer .link-legal a {
+  color: #d7d4cc;
+  font-size: 0.8rem;
+  margin: 0 10px;
+  transition: 0.2s ease;
+}
+footer .link-legal a:hover {
+  font-weight: bold;
+}
 
 .card,
 .card-yellow {
@@ -386,12 +399,12 @@ footer ul li a:hover {
 }
 
 .button-call {
-  bottom: 20px;
+  bottom: 40px;
   right: 20px;
 }
 
 .button-up {
-  bottom: 20px;
+  bottom: 40px;
   right: 100px;
   display: none;
   z-index: 1000;
