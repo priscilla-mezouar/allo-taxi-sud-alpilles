@@ -194,7 +194,7 @@ header .navigation nav ul li a:hover {
 }
 header .button-header {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
 @media screen and (max-width: 900px) {
