@@ -4,7 +4,7 @@ const closeNav = document.querySelector("#closenav");
 const nav = document.querySelector("nav");
 
 openNav.addEventListener("click", () => {
-  nav.style.display = "flex";
+  nav.style.display = "block";
   openNav.style.display = "none";
   closeNav.style.display = "block";
 });
@@ -12,7 +12,7 @@ openNav.addEventListener("click", () => {
 closeNav.addEventListener("click", () => {
   nav.style.display = "none";
   closeNav.style.display = "none";
-  openNav.style.display = "flex";
+  openNav.style.display = "block";
 });
 
 // Sytème accordéon donné par chatGPT
