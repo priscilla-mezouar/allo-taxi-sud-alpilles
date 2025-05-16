@@ -27,7 +27,6 @@ h4,
 h5,
 h6 {
   font-family: "comfortaa", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  margin-bottom: 20px;
 }
 
 h1 {
@@ -36,7 +35,6 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  padding-bottom: 30px;
 }
 
 h3 {
@@ -220,7 +218,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   footer {
     display: block;
     text-align: center;
@@ -229,7 +227,7 @@ footer {
 footer p {
   font-size: 0.8rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   footer p {
     padding-bottom: 30px;
   }
@@ -268,6 +266,11 @@ footer .link-legal {
   font-size: 0.8rem;
   color: #d7d4cc;
 }
+@media screen and (max-width: 1100px) {
+  footer .link-legal {
+    margin-bottom: 30px;
+  }
+}
 footer .link-legal a {
   color: #d7d4cc;
   font-size: 0.8rem;
@@ -280,12 +283,27 @@ footer .link-legal a:hover {
 
 .card,
 .card-yellow {
+  width: 90%;
+  margin: 50px auto;
+  display: grid;
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  margin: 50px;
-  padding: 50px;
   border-radius: 20px;
   box-shadow: inset 0 0 20px #000;
+}
+.card img,
+.card-yellow img {
+  width: 100%;
+  height: 100%;
+}
+.card h2,
+.card-yellow h2 {
+  margin-bottom: 50px;
+}
+.card h3,
+.card-yellow h3 {
+  margin-bottom: 30px;
 }
 
 .card {
@@ -321,6 +339,7 @@ footer .link-legal a:hover {
 }
 
 .cta {
+  padding: 50px;
   text-align: center;
 }
 .cta p {
@@ -331,11 +350,15 @@ footer .link-legal a:hover {
     margin-bottom: 30px;
   }
 }
+.cta .buttons-cta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 @media screen and (max-width: 1100px) {
-  .cta a {
-    display: block;
-    font-size: 0.9rem;
-    margin: 20px 0;
+  .cta .buttons-cta {
+    grid-template-columns: 1fr;
+    margin-bottom: 30px;
   }
 }
 
@@ -440,417 +463,40 @@ footer .link-legal a:hover {
   text-align: center;
 }
 
-.home #hero,
-.home #tarifs-et-forfaits,
-.home #reservation,
-.home #nos-vehicules,
-.home #actualites-et-blog {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  gap: 20px;
-  padding: 0 !important;
-}
-@media screen and (max-width: 1100px) {
-  .home #hero,
-  .home #tarifs-et-forfaits,
-  .home #reservation,
-  .home #nos-vehicules,
-  .home #actualites-et-blog {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-.home #hero .text,
-.home #tarifs-et-forfaits .text,
-.home #reservation .text,
-.home #nos-vehicules .text,
-.home #actualites-et-blog .text {
-  padding: 50px;
-}
-.home #hero .text p,
-.home #tarifs-et-forfaits .text p,
-.home #reservation .text p,
-.home #nos-vehicules .text p,
-.home #actualites-et-blog .text p {
-  padding-bottom: 30px;
-}
-.home #hero img,
-.home #tarifs-et-forfaits img,
-.home #reservation img,
-.home #nos-vehicules img,
-.home #actualites-et-blog img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0 10px 10px 0;
-}
-@media screen and (max-width: 1100px) {
-  .home #hero img,
-  .home #tarifs-et-forfaits img,
-  .home #reservation img,
-  .home #nos-vehicules img,
-  .home #actualites-et-blog img {
-    border-radius: 0 0 10px 10px;
-  }
-}
-.home #hero h2 {
-  padding-bottom: 0;
-}
-.home #hero a {
-  text-align: center;
-}
-@media screen and (max-width: 1100px) {
-  .home #hero a {
-    display: block;
-  }
-}
-.home #hero a:nth-of-type(2) {
-  margin-top: 20px;
-}
-@media screen and (max-width: 1100px) {
-  .home #hero img {
-    width: 95%;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .home #services {
-    padding: 50px 20px;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .home #services h2 {
-    text-align: center;
-  }
-}
-.home #services .services-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-@media screen and (max-width: 1100px) {
-  .home #services .services-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-.home #services .services-grid .service-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: inset 0 0 20px #000;
-  text-align: center;
-}
-.home #services .services-grid .service-item i {
-  padding-bottom: 20px;
-  color: #ffe14d;
-  font-size: 2.2rem;
-}
-@media screen and (max-width: 1100px) {
-  .home #tarifs-et-forfaits img {
-    width: 86%;
-    margin: 0 auto;
-  }
-}
-.home #tarifs-et-forfaits .grid-tarif {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-@media screen and (max-width: 1100px) {
-  .home #tarifs-et-forfaits .grid-tarif {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-.home #tarifs-et-forfaits .grid-tarif div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: inset 0 0 20px #000;
-  text-align: left;
-}
-@media screen and (max-width: 1100px) {
-  .home #tarifs-et-forfaits .grid-tarif div {
-    text-align: center;
-  }
-}
-.home #tarifs-et-forfaits .grid-tarif div h3 {
-  color: #fff;
-}
-.home #tarifs-et-forfaits .grid-tarif div p {
-  padding-bottom: 0;
-}
-@media screen and (max-width: 1100px) {
-  .home #tarifs-et-forfaits .grid-tarif div p {
-    text-align: center;
-  }
-}
-.home #reservation {
-  grid-template-columns: 40% 60% !important;
-}
-@media screen and (max-width: 1100px) {
-  .home #reservation {
-    display: flex;
-    grid-template-columns: 1fr !important;
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .home #reservation h2 {
-    text-align: center;
-    padding: 0 20px;
-  }
-}
-.home #reservation img {
-  border-radius: 10px 0 0 10px;
-}
-@media screen and (max-width: 1100px) {
-  .home #reservation img {
-    border-radius: 0 0 10px 10px;
-  }
-}
-.home #reservation .grid-reservation div {
-  padding: 20px 20px 0;
-  margin: 20px 0;
-  border-left: 10px solid #1b1b1e;
-  border-radius: 0;
-}
-.home #reservation .grid-reservation div:nth-child(2) {
-  margin-left: 40px;
-}
-.home #reservation .grid-reservation div:nth-child(3) {
-  margin-left: 80px;
-}
-@media screen and (max-width: 1100px) {
-  .home #a-propos h2 {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .home #a-propos {
-    padding: 50px 20px;
-  }
-}
-.home #a-propos .grid-a-propos {
-  display: grid;
+#home #a-propos .grid-container {
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
 }
-@media screen and (max-width: 1100px) {
-  .home #a-propos .grid-a-propos {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .home #a-propos .grid-a-propos h2 {
-    text-align: center;
-  }
-}
-.home #a-propos .grid-a-propos .item-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: inset 0 0 20px #000;
+#home #a-propos .grid-container .grid-item {
   text-align: center;
 }
-.home #a-propos .grid-a-propos .item-text span {
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 50%;
-  background: #1b1b1e;
-  width: 150px;
-  height: 150px;
+#home #a-propos .grid-container .grid-item span {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffe14d;
-  font-size: 3rem;
-  box-shadow: 0 0 10px #000;
-}
-.home #a-propos .text p {
-  margin-top: 50px;
-  text-align: justify;
-}
-@media screen and (max-width: 1100px) {
-  .home #a-propos .text p {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .home #zones h2 {
-    text-align: center;
-  }
-}
-.home #zones i {
-  display: none;
-}
-@media screen and (max-width: 1100px) {
-  .home #zones i {
-    display: block;
-    color: #ffe14d;
-    background: #1b1b1e;
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    box-shadow: 0 0 10px #1b1b1e;
-  }
-}
-.home #zones .grid-zone {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-@media screen and (max-width: 1100px) {
-  .home #zones .grid-zone {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .home #zones .grid-zone img {
-    display: none;
-  }
-  .home #zones .grid-zone p {
-    padding-bottom: 30px;
-  }
-}
-.home #zones .grid-zone .zone-item {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 1100px) {
-  .home #zones .grid-zone .zone-item {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-.home #nos-vehicules {
-  grid-template-columns: 40% 60%;
-  padding: 0 !important;
-}
-@media screen and (max-width: 1100px) {
-  .home #nos-vehicules {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-.home #nos-vehicules img {
-  border-radius: 10px 0 0 10px;
-}
-@media screen and (max-width: 1100px) {
-  .home #nos-vehicules img {
-    border-radius: 10px 10px 0 0;
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-.home #nos-vehicules #grid-auto {
-  padding: 50px;
-}
-.home #nos-vehicules #grid-auto #item-auto {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 1100px) {
-  .home #nos-vehicules #grid-auto #item-auto {
-    margin-bottom: 20px;
-  }
-}
-.home #nos-vehicules #grid-auto #item-auto .ico-auto {
-  width: 100px;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
-          clip-path: polygon(50% 20%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
-  background: #1b1b1e;
-}
-.home #nos-vehicules #grid-auto #item-auto .ico-auto i {
-  font-size: 2.2rem;
-}
-.home #temoignages {
-  padding: 50px 20px;
-}
-@media screen and (max-width: 1100px) {
-  .home #temoignages h2 {
-    text-align: center;
-  }
-}
-.home #temoignages .clients-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-@media screen and (max-width: 1100px) {
-  .home #temoignages .clients-grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-}
-.home #temoignages .clients-grid .client-item {
-  box-shadow: inset 0 0 20px #000;
+  font-size: 1.8rem;
   padding: 20px;
-  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 40px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px #000;
 }
-.home #temoignages .clients-grid .client-item img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
+#home #a-propos .presentation {
+  margin-top: 50px;
 }
-.home #temoignages .clients-grid .client-item h3,
-.home #temoignages .clients-grid .client-item p {
-  text-align: center;
-}
-.home #actualites-et-blog {
-  grid-template-columns: 40% 60%;
-  padding: 0 !important;
-}
-@media screen and (max-width: 1100px) {
-  .home #actualites-et-blog {
-    grid-template-columns: 1fr;
-    text-align: center;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-.home #actualites-et-blog img {
-  border-radius: 10px 0 0 10px;
-}
-@media screen and (max-width: 1100px) {
-  .home #actualites-et-blog img {
-    border-radius: 0 0 10px 10px;
-  }
-}
-.home #actualites-et-blog .text-actus {
+
+#home #actualites-et-blog .text {
   padding: 50px;
 }
-.home #actualites-et-blog .text-actus .actu-item {
+#home #actualites-et-blog .text .actu-item {
   display: grid;
   grid-template-columns: 10% 80%;
   gap: 20px;
   margin-top: 50px;
   position: relative;
 }
-.home #actualites-et-blog .text-actus .actu-item i {
+#home #actualites-et-blog .text .actu-item i {
   background: #1b1b1e;
   width: 40px;
   height: 40px;
@@ -861,17 +507,17 @@ footer .link-legal a:hover {
   font-size: 1.3rem;
   box-shadow: 0 0 5px #000;
 }
-.home #actualites-et-blog .text-actus .actu-item i:after {
+#home #actualites-et-blog .text .actu-item i:after {
   content: "";
   top: 40px;
   height: 100%;
   position: absolute;
   border-left: 3px solid #1b1b1e;
 }
-.home #actualites-et-blog .text-actus .actu-item h3 {
+#home #actualites-et-blog .text .actu-item h3 {
   position: relative;
 }
-.home #actualites-et-blog .text-actus .actu-item h3:after {
+#home #actualites-et-blog .text .actu-item h3:after {
   content: "";
   top: 50%;
   left: -50px;
@@ -881,195 +527,393 @@ footer .link-legal a:hover {
   border-top: 3px solid #1b1b1e;
 }
 @media screen and (max-width: 1100px) {
-  .home #actualites-et-blog .text-actus .actu-item h3:after {
+  #home #actualites-et-blog .text .actu-item h3:after {
     display: none;
   }
 }
-.home #faq h2 {
+
+@media screen and (max-width: 1100px) {
+  #faq {
+    text-align: left !important;
+  }
+}
+#faq h2 {
   padding: 0 !important;
 }
-.home #faq .question {
+#faq .question {
   cursor: pointer;
   transition: 0.2s ease;
 }
-.home #faq .question:hover {
+#faq .question:hover {
   font-weight: bold;
 }
-.home #faq .reponse {
+#faq .reponse {
   display: none;
   padding-left: 20px;
   border-left: 1px solid #fff;
   padding-bottom: 20px;
 }
-.home #faq .reponse p {
+#faq .reponse p {
   color: #27272b;
 }
-.home #faq .reponse ul li {
+#faq .reponse ul li {
   list-style-position: inside;
   color: #27272b;
 }
-.home #faq .reponse a {
+#faq .reponse a {
   font-weight: bold;
 }
 
-#demande-de-devis #demande-grid {
+#home #hero h1 {
+  margin-bottom: 50px;
+}
+#home #hero p {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1100px) {
+  #home #hero a {
+    display: block;
+  }
+  #home #hero a:last-of-type {
+    margin-top: 20px;
+  }
+}
+
+#home #nos-vehicules .grid-item-vehicules {
   display: grid;
-  grid-template-columns: 70% 30%;
-  margin: 50px;
+  grid-template-columns: 1fr 5fr;
+  justify-content: center;
+  align-items: top;
   gap: 20px;
 }
 @media screen and (max-width: 1100px) {
-  #demande-de-devis #demande-grid {
-    grid-template-columns: 1fr;
-    margin: 10px;
+  #home #nos-vehicules .grid-item-vehicules {
+    margin-bottom: 10%;
   }
 }
-#demande-de-devis #demande-grid section {
-  margin: 0 !important;
+#home #nos-vehicules .grid-item-vehicules h3 {
+  margin-bottom: 10px;
 }
-#demande-de-devis form {
-  padding: 0 50px 20px;
-  border-radius: 10px;
+#home #nos-vehicules .grid-item-vehicules .ico-auto {
+  width: 100px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+          clip-path: polygon(50% 20%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+  background: #1b1b1e;
 }
 @media screen and (max-width: 1100px) {
-  #demande-de-devis form {
-    padding: 0 20px;
-    text-align: center;
+  #home #nos-vehicules .grid-item-vehicules .ico-auto {
+    width: 50px;
+    height: 75px;
   }
 }
-#demande-de-devis form .form-step {
+#home #nos-vehicules .grid-item-vehicules .ico-auto i {
+  font-size: 2.2rem;
+  color: #ffe14d;
+}
+
+@media screen and (max-width: 1100px) {
+  #home #reservation {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+#home #reservation .grid-item-reservation {
+  border-left: 10px solid #1b1b1e;
+  padding-left: 20px;
+}
+#home #reservation .grid-item-reservation:nth-of-type(2) {
+  margin-left: 40px;
+}
+@media screen and (max-width: 1100px) {
+  #home #reservation .grid-item-reservation:nth-of-type(2) {
+    margin-left: 0;
+  }
+}
+#home #reservation .grid-item-reservation:nth-of-type(3) {
+  margin-left: 80px;
+}
+@media screen and (max-width: 1100px) {
+  #home #reservation .grid-item-reservation:nth-of-type(3) {
+    margin-left: 0;
+  }
+}
+
+#home #services .grid-container {
+  grid-template-columns: repeat(4, 1fr);
+}
+#home #services .grid-container .grid-item {
+  text-align: center;
+}
+#home #services .grid-container .grid-item i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 40px;
+  color: #ffe14d;
+  font-size: 2.2rem;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px #000;
+}
+
+#home #tarifs-et-forfaits .grid-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#home #temoignages .grid-container {
+  grid-template-columns: repeat(3, 1fr);
+}
+#home #temoignages .grid-container .grid-item {
+  padding: 20px;
+}
+#home #temoignages .grid-container h3,
+#home #temoignages .grid-container p {
+  text-align: center;
+}
+#home #temoignages .grid-container img {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#home #zones .grid-zones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  #home #zones .grid-zones {
+    grid-template-columns: 1fr !important;
+  }
+  #home #zones .grid-zones img {
+    display: none;
+  }
+}
+#home #zones .grid-zones .grid-item-zones {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+#home #zones .grid-zones .grid-item-zones h3 {
+  margin-bottom: 10px;
+}
+#home #zones .grid-zones .grid-item-zones i {
+  display: none;
+  color: #000;
+  font-size: 2.2rem;
+  margin: 30px auto;
+}
+@media screen and (max-width: 1100px) {
+  #home #zones .grid-zones .grid-item-zones i {
+    display: block;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #home #zones .grid-zones .right-item,
+  #home #zones .grid-zones .left-item {
+    grid-template-columns: 1fr !important;
+  }
+}
+#home #zones .grid-zones .right-item {
+  grid-template-columns: 4fr 2fr;
+}
+#home #zones .grid-zones .left-item {
+  grid-template-columns: 2fr 4fr;
+}
+
+#home section {
+  display: grid;
+}
+@media screen and (max-width: 1100px) {
+  #home section {
+    grid-template-columns: 1fr !important;
+    text-align: center !important;
+  }
+  #home section img {
+    border-radius: 10px !important;
+  }
+}
+#home section .text {
+  padding: 50px;
+}
+#home section .grid-container {
+  display: grid;
+  gap: 20px;
+}
+@media screen and (max-width: 1100px) {
+  #home section .grid-container {
+    grid-template-columns: 1fr !important;
+  }
+}
+#home section .grid-container .grid-item {
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px #000;
+  padding: 50px 20px;
+}
+#home #hero,
+#home #tarifs-et-forfaits {
+  grid-template-columns: 60% 40%;
+}
+#home #hero img,
+#home #tarifs-et-forfaits img {
+  border-radius: 0 10px 10px 0;
+}
+#home #reservation,
+#home #nos-vehicules,
+#home #actualites-et-blog {
+  grid-template-columns: 40% 60%;
+}
+#home #reservation img,
+#home #nos-vehicules img,
+#home #actualites-et-blog img {
+  border-radius: 10px 0 0 10px;
+}
+#home #services,
+#home #a-propos,
+#home #zones,
+#home #temoignages,
+#home #faq {
+  grid-template-columns: 1fr;
+}
+
+#demande-de-devis .form-container {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+#demande-de-devis .form-container form {
+  width: 100%;
+  border-radius: 10px;
+  justify-content: start !important;
+  align-items: start !important;
+}
+#demande-de-devis .form-container form .form-step {
   display: none;
 }
-#demande-de-devis form .form-step.active {
+#demande-de-devis .form-container form .form-step.active {
   display: block;
 }
-#demande-de-devis form label {
+#demande-de-devis .form-container form label {
   width: 100%;
   color: #000;
   display: block;
   padding: 10px 0;
 }
-@media screen and (max-width: 1100px) {
-  #demande-de-devis form label {
-    padding: 20px 0 10px;
-  }
-}
-#demande-de-devis form input,
-#demande-de-devis form select,
-#demande-de-devis form textarea {
+#demande-de-devis .form-container form input,
+#demande-de-devis .form-container form select,
+#demande-de-devis .form-container form textarea {
   border-radius: 0px;
   background: none;
   transition: 0.2s ease;
 }
-#demande-de-devis form input:hover, #demande-de-devis form input:focus, #demande-de-devis form input:active,
-#demande-de-devis form select:hover,
-#demande-de-devis form select:focus,
-#demande-de-devis form select:active,
-#demande-de-devis form textarea:hover,
-#demande-de-devis form textarea:focus,
-#demande-de-devis form textarea:active {
+#demande-de-devis .form-container form input:hover, #demande-de-devis .form-container form input:focus, #demande-de-devis .form-container form input:active,
+#demande-de-devis .form-container form select:hover,
+#demande-de-devis .form-container form select:focus,
+#demande-de-devis .form-container form select:active,
+#demande-de-devis .form-container form textarea:hover,
+#demande-de-devis .form-container form textarea:focus,
+#demande-de-devis .form-container form textarea:active {
   outline: none;
 }
-#demande-de-devis form input,
-#demande-de-devis form select {
+#demande-de-devis .form-container form input,
+#demande-de-devis .form-container form select {
   width: 100%;
   border-bottom: 1px solid #1b1b1e;
   border-top: none;
   border-left: none;
   border-right: none;
 }
-#demande-de-devis form input:hover, #demande-de-devis form input:focus, #demande-de-devis form input:active,
-#demande-de-devis form select:hover,
-#demande-de-devis form select:focus,
-#demande-de-devis form select:active {
+#demande-de-devis .form-container form input:hover, #demande-de-devis .form-container form input:focus, #demande-de-devis .form-container form input:active,
+#demande-de-devis .form-container form select:hover,
+#demande-de-devis .form-container form select:focus,
+#demande-de-devis .form-container form select:active {
   border-bottom: 2px solid #000;
 }
-#demande-de-devis form select {
+#demande-de-devis .form-container form select {
   padding: 10px;
 }
-#demande-de-devis form textarea {
+#demande-de-devis .form-container form textarea {
   display: block;
   padding: 0 10px;
   border: 1px solid #1b1b1e;
   border-radius: 5px;
   width: 100%;
 }
-#demande-de-devis form .flex-box {
+#demande-de-devis .form-container form .flex-box {
   display: flex;
   justify-content: space-between;
 }
-#demande-de-devis form .flex-box button {
+#demande-de-devis .form-container form .flex-box button {
   margin-top: 50px;
   padding: 5px 20px;
 }
-#demande-de-devis #coordonnes .item-contact {
-  margin-bottom: 50px;
+
+#demande-de-devis #coordonnes {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
 }
-#demande-de-devis #coordonnes .item-contact .title-item {
+#demande-de-devis #coordonnes .grid-container {
   display: grid;
-  grid-template-columns: 50px 80%;
+  gap: 20px;
+  width: 100%;
+}
+#demande-de-devis #coordonnes .grid-container .item-contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: inset 0 0 20px #000;
+  padding: 50px;
+  border-radius: 10px;
+}
+#demande-de-devis #coordonnes .grid-container .item-contact .title-item {
+  display: flex;
   align-items: center;
   gap: 20px;
-  margin-bottom: 30px;
 }
-#demande-de-devis #coordonnes .item-contact .title-item i {
-  width: 50px;
-  height: 50px;
-  background: #ffe14d;
-  font-size: 2rem;
-  color: #000;
-  padding: 10px;
+@media screen and (max-width: 1100px) {
+  #demande-de-devis #coordonnes .grid-container .item-contact .title-item {
+    display: block;
+  }
+}
+#demande-de-devis #coordonnes .grid-container .item-contact .title-item i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #ffe14d;
+  font-size: 2.2rem;
+  width: 60px;
+  height: 60px;
   border-radius: 5px;
   box-shadow: inset 0 0 10px #000;
 }
-#demande-de-devis #coordonnes .item-contact .title-item h2 {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-#demande-de-devis #coordonnes .item-contact ul li {
+#demande-de-devis #coordonnes .grid-container .item-contact ul li {
   list-style: none;
+  padding-bottom: 20px;
 }
-#demande-de-devis #coordonnes .item-contact ul li i {
+#demande-de-devis #coordonnes .grid-container .item-contact ul li:last-of-type {
+  padding-bottom: 0;
+}
+#demande-de-devis #coordonnes .grid-container .item-contact ul li i {
   font-size: 1.5rem;
   color: #ffe14d;
-  margin-right: 10px;
+  margin-right: 5px;
 }
-#demande-de-devis #coordonnes .item-contact ul li span {
+#demande-de-devis #coordonnes .grid-container .item-contact ul li span {
   color: #ffe14d;
   font-weight: bold;
 }
 
-.articles .menu-villes {
-  padding: 20px;
-}
-.articles .menu-villes ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 1100px) {
-  .articles .menu-villes ul {
-    display: block;
-  }
-}
-.articles .menu-villes ul li {
-  list-style: none;
-}
-@media screen and (max-width: 1100px) {
-  .articles .menu-villes ul li {
-    margin: 10px;
-    text-align: center;
-  }
-}
-.articles .menu-villes ul li a {
-  padding: 10px 20px;
-  margin: 0 10px;
-}
-@media screen and (max-width: 1100px) {
-  .articles .menu-villes ul li a {
-    font-size: 0.9rem;
-    text-align: center;
-  }
+.articles .card {
+  padding: 50px;
 }
 .articles ul li {
   list-style-position: inside;
@@ -1094,6 +938,7 @@ footer .link-legal a:hover {
     text-align: left;
   }
 }
+
 .articles .grid-events {
   display: grid;
   grid-template-columns: 1fr;
@@ -1108,4 +953,28 @@ footer .link-legal a:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+
+.articles .menu-villes {
+  padding: 20px;
+}
+.articles .menu-villes ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.articles .menu-villes ul li {
+  list-style: none;
+  margin: 10px;
+  text-align: center;
+}
+.articles .menu-villes ul li a {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 0.9rem;
+}
+
+#legal .card {
+  padding: 50px;
 }/*# sourceMappingURL=index.css.map */
