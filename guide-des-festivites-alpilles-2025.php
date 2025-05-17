@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <?php include('./includes/head-links.php'); ?>
 
     <!-- Titre et description -->
     <title>
@@ -16,29 +17,10 @@
     <meta
       name="keywords"
       content="événements Alpilles 2025, festivals Tarascon été 2025, fêtes Fontvieille, marché nocturne Saint-Rémy-de-Provence, animations estivales Baux de Provence, Allo Taxi Sud, taxi été Alpilles" />
-    <meta name="author" content="Allo Taxi Sud" />
-    <meta name="robots" content="index, follow" />
     <link
       rel="canonical"
-      href="https://www.allo-taxi-sud-alpilles.com/actualites-blog/guide-des-festivites-alpilles-2025.html" />
-    <meta name="language" content="fr" />
+      href="https://allo-taxi-sud-alpilles.com/guide-des-festivites-alpilles-2025.php" />
 
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="../assets/images/allo-taxi-favicon.ico"
-      type="image/ico" />
-
-    <!-- Icône pour les raccourcis sur l'écran d'accueil (Apple) -->
-    <link
-      rel="apple-touch-icon"
-      href="../assets/images/allo-taxi-favicon.ico" />
-
-    <!-- Icône pour Android (via Web App Manifest si PWA) -->
-    <link
-      rel="icon"
-      sizes="192x192"
-      href="../assets/images/allo-taxi-favicon.ico" />
 
     <!-- Open Graph (Facebook & LinkedIn) -->
     <meta
@@ -47,71 +29,22 @@
     <meta
       property="og:description"
       content="Explorez les événements de l'été 2025 à Tarascon, Fontvieille, Saint-Rémy-de-Provence, Les Baux et Maussane avec Allo Taxi Sud. Réservez votre taxi pour profiter sans contrainte !" />
-    <meta property="og:type" content="article" />
-
+      <meta property="og:type" content="article" />
     <meta
       property="og:url"
-      content="https://www.allo-taxi-sud-alpilles.com/actualites-blog/guide-des-festivites-alpilles-2025.html" />
-    <meta
-      property="og:image"
-      content="https://www.allo-taxi-sud-alpilles.com/assets/images/festivites-alpilles.jpeg" />
-    <meta property="og:locale" content="fr_FR" />
+      content="https://allo-taxi-sud-alpilles.com/guide-des-festivites-alpilles-2025.php" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Guide des festivités Alpilles 2025" />
     <meta
       name="twitter:description"
       content="Fêtes locales, marchés d'été, concerts et plus encore dans les Alpilles ! Réservez votre taxi avec Allo Taxi Sud." />
-    <meta
-      name="twitter:image"
-      content="https://www.allo-taxi-sud-alpilles.com/assets/images/festivites-alpilles.jpeg" />
 
-    <!-- PWA / Apple mobile settings -->
-    <meta name="apple-mobile-web-app-title" content="Allo Taxi Sud" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="#1b1b1e" />
-
-    <!-- Styles -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" />
-
-    <link rel="stylesheet" href="../assets/styles/index.css" />
   </head>
+
   <body class="articles">
-    <header>
-      <a href="../index.html">
-        <div class="logo">
-          <img
-            src="../assets/images/logo-allo-taxi.png"
-            loading="lazy"
-            alt="Logo Allo Taxi Sud" />
-        </div>
-      </a>
-      <div class="navigation">
-        <div class="toggle-nav">
-          <i id="opennav" class="bi bi-list"></i>
-          <i id="closenav" class="bi bi-x-circle"></i>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="../index.html"><i class="bi bi-house"></i> </a>
-            </li>
-            <li><a href="../index.html#a-propos">Qui sommes-nous ?</a></li>
-            <li><a href="../index.html#services"> Nos services </a></li>
-            <li><a href="../index.html#nos-vehicules"> Nos véhicules </a></li>
-            <li><a href="../demande-de-devis.html"> Demande de Devis </a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="button-header">
-        <a class="button-link" href="tel:+33667319832"
-          ><i class="bi bi-phone-vibrate"></i> Contactez-nous</a
-        >
-      </div>
-    </header>
+  <?php include('./includes/header.php'); ?>
+
     <main role="main">
       <div class="title-page">
         <h1>Guide des festivités estivales – Édition 2025</h1>
@@ -692,7 +625,7 @@
         <div class="buttons-cta">
           <a
             class="button-link"
-            href="../demande-de-devis.html"
+            href="./demande-de-devis.php"
             class="button-link"
             ><i class="bi bi-envelope"></i> Demander un devis</a
           >
@@ -702,53 +635,11 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="copyright">
-        <p>
-          ©2025 - <a href="./index.html">Groupe Allo Taxi Sud</a> - Tous droits
-          réservés.
-        </p>
-      </div>
-      <div class="link-legal">
-        <a href="../mentions-legales.html">Mentions légales</a> -
-        <a href="../politique-de-confidentialite.html"
-          >Politique de confidentialité</a
-        >
-      </div>
-      <div class="link-social">
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/allotaxisudalpilles"
-              ><i class="bi bi-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/allotaxisud"
-              ><i class="bi bi-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.tiktok.com/@allo_taxi_sud"
-              ><i class="bi bi-tiktok"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/allo-taxi-sud-80b5ba364/"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <button
-      class="button-up"
-      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-      <i class="bi bi-arrow-up-short"></i>
-    </button>
-    <div class="button-call">
-      <a href="tel:0667319832"><i class="bi bi-phone-vibrate"></i></a>
-    </div>
+    <?php 
+include('./includes/footer.php'); 
+include('./includes/buttons-footer.php'); 
+?>
 
-    <script src="../assets/js/index.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>

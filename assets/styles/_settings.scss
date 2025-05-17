@@ -37,6 +37,7 @@ body {
   background: $bg;
   color: $text;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 h1,

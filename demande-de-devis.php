@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <?php include('./includes/head-links.php'); ?>
 
     <!-- Titre et description -->
     <title>
@@ -15,101 +15,35 @@
     <meta
       name="keywords"
       content="demande de devis taxi, taxi Tarascon, taxi Fontvieille, taxi Saint-Étienne-du-Grès, taxi Alpilles, taxi VTC Alpilles, transport médical, devis transport VSL, devis taxi mariage, Allo Taxi Sud, devis taxi personnalisé" />
-    <meta name="author" content="Allo Taxi Sud" />
-    <meta name="robots" content="index, follow" />
     <link
       rel="canonical"
-      href="https://www.allo-taxi-sud-alpilles.com/demande-de-devis.html" />
-    <meta name="language" content="fr" />
-
-    <!-- Favicon -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/allo-taxi-favicon.png"
-      type="image/ico" />
-
-    <!-- Icône pour les raccourcis sur l'écran d'accueil (Apple) -->
-    <link rel="apple-touch-icon" href="./assets/images/allo-taxi-favicon.ico" />
-
-    <!-- Icône pour Android (via Web App Manifest si PWA) -->
-    <link
-      rel="icon"
-      sizes="192x192"
-      href="./assets/images/allo-taxi-favicon.ico" />
+      href="https://allo-taxi-sud-alpilles.com/demande-de-devis.php" />
 
     <!-- Open Graph (Facebook & LinkedIn) -->
     <meta
-      property="og:title"
-      content="Allo Taxi Sud Alpilles | Taxi 7j/7 Tarascon, Fontvieille, Saint-Étienne-du-Grès et les Alpilles" />
+    property="og:title"
+    content="Allo Taxi Sud Alpilles | Taxi 7j/7 Tarascon, Fontvieille, Saint-Étienne-du-Grès et les Alpilles" />
     <meta
-      property="og:description"
-      content="Transport de qualité 24h/24 et 7j/7 sur réservation dans les Alpilles : Taxis, transferts aéroports, gares, tourisme, évènements, transport médical." />
+    property="og:description"
+    content="Transport de qualité 24h/24 et 7j/7 sur réservation dans les Alpilles : Taxis, transferts aéroports, gares, tourisme, évènements, transport médical." />
     <meta property="og:type" content="website" />
     <meta
-      property="og:url"
-      content="https://www.allo-taxi-sud-alpilles.com/demande-de-devis.html" />
-    <meta
-      property="og:image"
-      content="https://www.allo-taxi-sud-alpilles.com/assets/images/homepage.jpg" />
-    <meta property="og:locale" content="fr_FR" />
+    property="og:url"
+      content="https://allo-taxi-sud-alpilles.com/demande-de-devis.php" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
       content="Allo Taxi Sud Alpilles | Votre taxi de confiance 7j/7" />
     <meta
       name="twitter:description"
       content="Besoin d’un taxi dans les Alpilles ? Contactez Allo Taxi Sud : service de transport fiable, ponctuel et confortable." />
-    <meta
-      name="twitter:image"
-      content="https://www.allo-taxi-sud-alpilles.com/assets/images/homepage.jpg" />
 
-    <!-- PWA / Apple mobile settings -->
-    <meta name="apple-mobile-web-app-title" content="Allo Taxi Sud" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="theme-color" content="#1b1b1e" />
-
-    <!-- Styles -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" />
-
-    <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
+
   <body id="demande-de-devis">
-    <header>
-      <a href="./index.html">
-        <div class="logo">
-          <img
-            src="./assets/images/logo-allo-taxi.png"
-            loading="lazy"
-            alt="Logo Allo Taxi Sud" />
-        </div>
-      </a>
-      <div class="navigation">
-        <div class="toggle-nav">
-          <i id="opennav" class="bi bi-list"></i>
-          <i id="closenav" class="bi bi-x-circle"></i>
-        </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="./index.html"><i class="bi bi-house"></i> </a>
-            </li>
-            <li><a href="./index.html#a-propos">Qui sommes-nous ?</a></li>
-            <li><a href="./index.html#services"> Nos services </a></li>
-            <li><a href="./index.html#nos-vehicules"> Nos véhicules </a></li>
-            <li><a href="./demande-de-devis.html"> Demande de Devis </a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="button-header">
-        <a class="button-link" href="tel:+33667319832"
-          ><i class="bi bi-phone-vibrate"></i> Contactez-nous</a
-        >
-      </div>
-    </header>
+  <?php include('./includes/header.php'); ?>
+
     <main role="main">
       <div class="title-page">
         <h1>Demande de devis</h1>
@@ -379,52 +313,10 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="copyright">
-        <p>
-          ©2025 - <a href="./index.html">Groupe Allo Taxi Sud</a> - Tous droits
-          réservés.
-        </p>
-      </div>
-      <div class="link-legal">
-        <a href="./mentions-legales.html">Mentions légales</a> -
-        <a href="./politique-de-confidentialite.html"
-          >Politique de confidentialité</a
-        >
-      </div>
-      <div class="link-social">
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/allotaxisudalpilles"
-              ><i class="bi bi-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/allotaxisud"
-              ><i class="bi bi-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.tiktok.com/@allo_taxi_sud"
-              ><i class="bi bi-tiktok"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/allo-taxi-sud-80b5ba364/"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <button
-      class="button-up"
-      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-      <i class="bi bi-arrow-up-short"></i>
-    </button>
-    <div class="button-call">
-      <a href="tel:0667319832"><i class="bi bi-phone-vibrate"></i></a>
-    </div>
+    <?php 
+include('./includes/footer.php'); 
+include('./includes/buttons-footer.php'); 
+?>
 
     <script src="./assets/js/index.js"></script>
   </body>
