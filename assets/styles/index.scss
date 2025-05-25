@@ -1,0 +1,32 @@
+@import "./settings";
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/card";
+@import "./layout/cta";
+
+@import "./components/buttons";
+@import "./components/button-call";
+@import "./components/title-page";
+@import "./components/intro";
+
+@import "./pages/home/home-a-propos";
+@import "./pages/home/home-actualites-et-blog";
+@import "./pages/home/home-faq";
+@import "./pages/home/home-hero";
+@import "./pages/home/home-nos-vehicules";
+@import "./pages/home/home-reservation";
+@import "./pages/home/home-services";
+@import "./pages/home/home-tarifs-et-forfaits";
+@import "./pages/home/home-temoignages";
+@import "./pages/home/home-zones";
+@import "./pages/home/home";
+
+@import "./pages/demande-de-devis/demande-de-devis-form-container";
+@import "./pages/demande-de-devis/demande-de-devis-coordonnes";
+
+@import "./pages/articles/articles";
+@import "./pages/articles/articles-grid-events";
+@import "./pages/articles/articles-menu-villes";
+
+@import "./pages/legal/legal";
