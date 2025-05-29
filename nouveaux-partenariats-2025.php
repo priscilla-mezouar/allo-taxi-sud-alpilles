@@ -86,7 +86,7 @@
             href="./demande-de-devis.php"
             ><i class="bi bi-envelope"></i> Demander un devis</a
           >
-          <a class="button-link" href="tel:0667319832" 
+          <a class="button-link" href="tel:+33667319832" 
             ><i class="bi bi-phone"></i> Réservation express</a
           >
         </div>

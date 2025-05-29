@@ -19,7 +19,7 @@ echo'<section class="card" id="reservation">
                 >
                 facile à utiliser ou appelez notre centre d\'appels disponible
                 24h/7j pour une assistance personnalisée au
-                <strong> <a href="tel:0667319832">06.67.31.98.32</a>. </strong>
+                <strong> <a href="tel:+33667319832">06.67.31.98.32</a>. </strong>
               </p>
             </div>
             <div class="grid-item-reservation">

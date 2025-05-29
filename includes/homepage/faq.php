@@ -17,22 +17,22 @@ echo'
                 </p>
                 <ul>
                   <li>
-                    <a href="tel:0667319832"
+                    <a href="tel:+33667319832"
                       >Allo Taxi Sud & Allo Taxi Sud Alpilles : 06.67.31.98.32</a
                     >
                   </li>
                   <li>
-                    <a href="tel:0617432959"
+                    <a href="tel:+33617432959"
                       >Allo Taxi Fontvieille : 06.17.43.29.59
                     </a>
                   </li>
                   <li>
-                    <a href="tel:0609958676"
+                    <a href="tel:+33609958676"
                       >Allo Taxi Tarascon : 06.09.95.86.76</a
                     >
                   </li>
                   <li>
-                    <a href="tel:0610892802"
+                    <a href="tel:+33610892802"
                       >Allo Taxi Saint-Étienne-du-Grès : 06.10.89.28.02
                     </a>
                   </li>
@@ -91,22 +91,22 @@ echo'
                   </p>
                   <ul>
                     <li>
-                    <a href="tel:0667319832"
+                    <a href="tel:+33667319832"
                       >Allo Taxi Sud & Allo Taxi Sud Alpilles : 06.67.31.98.32</a
                     >
                   </li>
                     <li>
-                      <a href="tel:0617432959"
+                      <a href="tel:+33617432959"
                         >Allo Taxi Fontvieille : 06.17.43.29.59
                       </a>
                     </li>
                     <li>
-                      <a href="tel:0609958676"
+                      <a href="tel:+33609958676"
                         >Allo Taxi Tarascon : 06.09.95.86.76</a
                       >
                     </li>
                     <li>
-                      <a href="tel:0610892802"
+                      <a href="tel:+33610892802"
                         >Allo Taxi Saint-Étienne-du-Grès : 06.10.89.28.02
                       </a>
                     </li>
