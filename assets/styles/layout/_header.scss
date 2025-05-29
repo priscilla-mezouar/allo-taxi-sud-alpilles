@@ -1,5 +1,6 @@
 header {
-  padding: 50px 50px 0;
+  background: $color1;
+  padding: 20px 50px;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   gap: 10px;
@@ -24,7 +25,7 @@ header {
     align-items: center;
 
     img {
-      width: 100%;
+      height: 60px;
       transition: 0.2s ease;
 
       @media screen and (max-width: 900px) {
@@ -34,7 +35,7 @@ header {
 
       &:hover {
         transform: scale(1.1);
-        filter: drop-shadow(0 0 5px $white);
+        filter: drop-shadow(0 0 5px $blackShadow);
       }
     }
   }
@@ -65,8 +66,7 @@ header {
 
       i {
         font-size: 2rem;
-        color: $white;
-        text-shadow: 0 0 10px $black;
+        color: $bg;
       }
       #closenav {
         display: none;
@@ -93,7 +93,7 @@ header {
           width: 100%;
           padding: 20px;
           border-radius: 10px;
-          box-shadow: 0 0 20px $black;
+          box-shadow: 0 0 20px $blackShadow;
           background: $color1;
         }
 
@@ -101,14 +101,14 @@ header {
           list-style: none;
 
           a {
-            color: $white;
+            color: $bg;
             padding: 10px 20px;
             border-radius: 50px;
             transition: 0.2s ease;
             border: 2px solid transparent;
 
             @media screen and (max-width: 1300px) {
-              color: $black;
+              border: none;
             }
 
             &:hover {
@@ -116,7 +116,12 @@ header {
               background: $color1;
               color: $black;
               transition: 0.2s ease;
-              box-shadow: inset 0 0 5px $black;
+              box-shadow: inset 0 0 5px $blackShadow;
+
+              @media screen and (max-width: 1300px) {
+                border: none;
+                box-shadow: none;
+              }
             }
           }
         }

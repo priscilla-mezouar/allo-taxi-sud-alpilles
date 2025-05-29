@@ -291,6 +291,7 @@
           l’onglet « Confidentialité », vous pouvez bloquer les cookies.
         </p>
       </section>
+      
       <section class="card">
         <h2>9. Droit applicable et attribution de juridiction.</h2>
         <p>

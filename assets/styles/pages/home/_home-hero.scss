@@ -1,10 +1,56 @@
 #home {
   #hero {
-    h1 {
-      margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 600px;
+    animation: slider 15s infinite linear;
+
+    @keyframes slider {
+      0% {
+        background: url(../images/1-transferts-gares-et-aeroports.webp)
+          center/cover;
+      }
+      20% {
+        background: url(../images/2-transports-quotidiens.webp) center/cover;
+      }
+      40% {
+        background: url(../images/3-transports-touristiques.webp) center/cover;
+      }
+      60% {
+        background: url(../images/4-transport-vsl-taxi-conventionne-securite-sociale.webp)
+          center/cover;
+      }
+      80% {
+        background: url(../images/5-transports-professionnels-transports-evenements-professionnels.webp)
+          center/cover;
+      }
+      100% {
+        background: url(../images/1-transferts-gares-et-aeroports.webp)
+          center/cover;
+      }
     }
+
+    .text {
+      padding: 50px;
+      background: $bg-overlay;
+      border-radius: 10px;
+      box-shadow: 0 0 20px $blackShadow;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: $color1;
+    }
+
+    h2 {
+      color: $color1;
+    }
+
     p {
-      margin-bottom: 50px;
+      margin: 30px auto 40px;
+      // color: $black;
     }
 
     @media screen and (max-width: 1100px) {

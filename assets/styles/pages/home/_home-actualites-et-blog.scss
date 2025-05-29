@@ -11,7 +11,7 @@
         position: relative;
 
         i {
-          background: $bg;
+          background: $color1;
           width: 40px;
           height: 40px;
           display: flex;
@@ -19,8 +19,8 @@
           align-items: center;
           border-radius: 50%;
           font-size: 1.3rem;
-          box-shadow: 0 0 5px $black;
-
+          box-shadow: 0 0 5px $blackShadow;
+          // color: $white;
           &:after {
             content: "";
             top: 40px;

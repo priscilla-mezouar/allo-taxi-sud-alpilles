@@ -17,7 +17,7 @@ echo '    <header>
         <nav>
           <ul>
             <li>
-              <a href="./index.php"><i class="bi bi-house"></i> </a>
+              <a href="./"><i class="bi bi-house"></i> </a>
             </li>
             <li><a href="./index.php#a-propos">Qui sommes-nous ?</a></li>
             <li><a href="./index.php#services"> Nos services </a></li>

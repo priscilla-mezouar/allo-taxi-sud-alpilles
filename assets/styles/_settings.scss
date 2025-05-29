@@ -4,8 +4,10 @@ $color1: #ffe14d;
 $text: #d7d4cc;
 $bg-card: #27272b;
 $bg: #1b1b1e;
+$bg-overlay: rgba(0, 0, 0, 0.8);
 $black: #000;
 $white: #fff;
+$blackShadow: rgba(0, 0, 0, 0.25);
 
 // fonts
 
@@ -34,7 +36,6 @@ $body-font: "raleway", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
 }
 
 body {
-  background: $bg;
   color: $text;
   position: relative;
   scroll-behavior: smooth;

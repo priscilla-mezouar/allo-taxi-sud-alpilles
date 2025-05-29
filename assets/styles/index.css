@@ -15,9 +15,9 @@
 }
 
 body {
-  background: #1b1b1e;
   color: #d7d4cc;
   position: relative;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -69,7 +69,8 @@ a {
 }
 
 header {
-  padding: 50px 50px 0;
+  background: #ffe14d;
+  padding: 20px 50px;
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   gap: 10px;
@@ -96,7 +97,7 @@ header .logo {
   align-items: center;
 }
 header .logo img {
-  width: 100%;
+  height: 60px;
   transition: 0.2s ease;
 }
 @media screen and (max-width: 900px) {
@@ -107,7 +108,7 @@ header .logo img {
 }
 header .logo img:hover {
   transform: scale(1.1);
-  filter: drop-shadow(0 0 5px #fff);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
 }
 header .navigation {
   display: flex;
@@ -137,8 +138,7 @@ header .navigation .toggle-nav {
 }
 header .navigation .toggle-nav i {
   font-size: 2rem;
-  color: #fff;
-  text-shadow: 0 0 10px #000;
+  color: #1b1b1e;
 }
 header .navigation .toggle-nav #closenav {
   display: none;
@@ -164,7 +164,7 @@ header .navigation nav ul {
     width: 100%;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px #000;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
     background: #ffe14d;
   }
 }
@@ -172,7 +172,7 @@ header .navigation nav ul li {
   list-style: none;
 }
 header .navigation nav ul li a {
-  color: #fff;
+  color: #1b1b1e;
   padding: 10px 20px;
   border-radius: 50px;
   transition: 0.2s ease;
@@ -180,7 +180,7 @@ header .navigation nav ul li a {
 }
 @media screen and (max-width: 1300px) {
   header .navigation nav ul li a {
-    color: #000;
+    border: none;
   }
 }
 header .navigation nav ul li a:hover {
@@ -188,7 +188,13 @@ header .navigation nav ul li a:hover {
   background: #ffe14d;
   color: #000;
   transition: 0.2s ease;
-  box-shadow: inset 0 0 5px #000;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 1300px) {
+  header .navigation nav ul li a:hover {
+    border: none;
+    box-shadow: none;
+  }
 }
 header .button-header {
   display: flex;
@@ -212,11 +218,13 @@ header .button-header .button-link i {
 }
 
 footer {
+  background: #ffe14d;
   width: 100%;
-  padding: 0 50px 50px;
+  padding: 30px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 1100px) {
   footer {
@@ -226,6 +234,7 @@ footer {
 }
 footer p {
   font-size: 0.8rem;
+  color: #1b1b1e;
 }
 @media screen and (max-width: 1100px) {
   footer p {
@@ -234,12 +243,12 @@ footer p {
 }
 footer p a {
   font-size: 0.8rem;
-  color: #ffe14d;
-  font-weight: bold;
+  color: #1b1b1e;
   transition: 0.2s ease;
 }
 footer p a:hover {
-  color: #fff;
+  color: #000;
+  font-weight: bold;
 }
 footer ul {
   display: flex;
@@ -252,7 +261,7 @@ footer ul li {
 }
 footer ul li a {
   padding: 10px;
-  color: #ffe14d;
+  color: #1b1b1e;
   font-size: 1.2rem;
   border-radius: 10px;
   transition: 0.2s ease;
@@ -264,7 +273,7 @@ footer ul li a:hover {
 }
 footer .link-legal {
   font-size: 0.8rem;
-  color: #d7d4cc;
+  color: #1b1b1e;
 }
 @media screen and (max-width: 1100px) {
   footer .link-legal {
@@ -272,7 +281,7 @@ footer .link-legal {
   }
 }
 footer .link-legal a {
-  color: #d7d4cc;
+  color: #1b1b1e;
   font-size: 0.8rem;
   margin: 0 10px;
   transition: 0.2s ease;
@@ -283,19 +292,18 @@ footer .link-legal a:hover {
 
 .card,
 .card-yellow {
-  width: 90%;
-  margin: 50px auto;
+  margin: 50px;
   display: grid;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  box-shadow: inset 0 0 20px #000;
+  border-radius: 10px;
 }
 .card img,
 .card-yellow img {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
 }
 .card h2,
 .card-yellow h2 {
@@ -306,20 +314,17 @@ footer .link-legal a:hover {
   margin-bottom: 30px;
 }
 
-.card {
-  background: #27272b;
-}
 .card h1,
 .card h2,
 .card h3,
 .card h4,
 .card h5,
 .card h6 {
-  color: #ffe14d;
+  color: #1b1b1e;
 }
 .card p,
 .card a {
-  color: #fff;
+  color: #1b1b1e;
 }
 
 .card-yellow {
@@ -367,25 +372,25 @@ footer .link-legal a:hover {
   border: 2px solid #000;
   border-radius: 50px;
   background: #ffe14d;
-  box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   color: #000;
   transition: 0.2s ease;
 }
 .button-simple:hover {
-  box-shadow: inset 0 0 5px #000;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .button-link {
   padding: 10px 20px;
   border: 2px solid #000;
   border-radius: 50px;
-  box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   background: #ffe14d;
   color: #000 !important;
   transition: 0.2s ease;
 }
 .button-link:hover {
-  box-shadow: inset 0 0 5px #000;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .button-up,
@@ -397,7 +402,7 @@ footer .link-legal a:hover {
   height: 60px;
   position: fixed;
   background: #ffe14d;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   color: #000;
   border-radius: 50%;
   transition: 0.2s ease;
@@ -419,7 +424,7 @@ footer .link-legal a:hover {
 }
 .button-up:hover,
 .button-call:hover {
-  box-shadow: inset 0 0 10px #000;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .button-call {
@@ -433,6 +438,7 @@ footer .link-legal a:hover {
   display: none;
   z-index: 1000;
   transition: opacity 0.4s ease;
+  border: none;
 }
 
 .button-up.show {
@@ -445,7 +451,7 @@ footer .link-legal a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffe14d;
+  color: #1b1b1e;
 }
 @media screen and (max-width: 1100px) {
   .title-page {
@@ -461,6 +467,17 @@ footer .link-legal a:hover {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  color: #1b1b1e;
+}
+
+#maintenance .logo {
+  width: 100px;
+}
+#maintenance section {
+  padding: 50px;
+}
+#maintenance img {
+  width: 300px;
 }
 
 #home #a-propos .grid-container {
@@ -468,12 +485,14 @@ footer .link-legal a:hover {
 }
 #home #a-propos .grid-container .grid-item {
   text-align: center;
+  background: #ffe14d;
 }
 #home #a-propos .grid-container .grid-item span {
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffe14d;
+  color: #1b1b1e;
   font-size: 1.8rem;
   padding: 20px;
   width: 100px;
@@ -497,7 +516,7 @@ footer .link-legal a:hover {
   position: relative;
 }
 #home #actualites-et-blog .text .actu-item i {
-  background: #1b1b1e;
+  background: #ffe14d;
   width: 40px;
   height: 40px;
   display: flex;
@@ -505,7 +524,7 @@ footer .link-legal a:hover {
   align-items: center;
   border-radius: 50%;
   font-size: 1.3rem;
-  box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
 }
 #home #actualites-et-blog .text .actu-item i:after {
   content: "";
@@ -564,11 +583,49 @@ footer .link-legal a:hover {
   font-weight: bold;
 }
 
+#home #hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 600px;
+  animation: slider 15s infinite linear;
+}
+@keyframes slider {
+  0% {
+    background: url(../images/1-transferts-gares-et-aeroports.webp) center/cover;
+  }
+  20% {
+    background: url(../images/2-transports-quotidiens.webp) center/cover;
+  }
+  40% {
+    background: url(../images/3-transports-touristiques.webp) center/cover;
+  }
+  60% {
+    background: url(../images/4-transport-vsl-taxi-conventionne-securite-sociale.webp) center/cover;
+  }
+  80% {
+    background: url(../images/5-transports-professionnels-transports-evenements-professionnels.webp) center/cover;
+  }
+  100% {
+    background: url(../images/1-transferts-gares-et-aeroports.webp) center/cover;
+  }
+}
+#home #hero .text {
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
 #home #hero h1 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  color: #ffe14d;
+}
+#home #hero h2 {
+  color: #ffe14d;
 }
 #home #hero p {
-  margin-bottom: 50px;
+  margin: 30px auto 40px;
 }
 @media screen and (max-width: 1100px) {
   #home #hero a {
@@ -583,7 +640,7 @@ footer .link-legal a:hover {
   display: grid;
   grid-template-columns: 1fr 5fr;
   justify-content: center;
-  align-items: top;
+  align-items: center;
   gap: 20px;
 }
 @media screen and (max-width: 1100px) {
@@ -602,7 +659,7 @@ footer .link-legal a:hover {
   align-items: center;
   -webkit-clip-path: polygon(50% 20%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
           clip-path: polygon(50% 20%, 100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
-  background: #1b1b1e;
+  background: #000;
 }
 @media screen and (max-width: 1100px) {
   #home #nos-vehicules .grid-item-vehicules .ico-auto {
@@ -612,7 +669,7 @@ footer .link-legal a:hover {
 }
 #home #nos-vehicules .grid-item-vehicules .ico-auto i {
   font-size: 2.2rem;
-  color: #ffe14d;
+  color: #fff;
 }
 
 @media screen and (max-width: 1100px) {
@@ -647,13 +704,15 @@ footer .link-legal a:hover {
 }
 #home #services .grid-container .grid-item {
   text-align: center;
+  background: #ffe14d;
 }
 #home #services .grid-container .grid-item i {
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto 40px;
-  color: #ffe14d;
+  color: #1b1b1e;
   font-size: 2.2rem;
   padding: 20px;
   width: 100px;
@@ -671,6 +730,24 @@ footer .link-legal a:hover {
 }
 #home #temoignages .grid-container .grid-item {
   padding: 20px;
+  background: #ffe14d;
+}
+#home #temoignages .grid-container .temoignages-text {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  flex-wrap: wrap;
+  height: 350px;
+  background: #fff;
+  color: #1b1b1e;
+  font-size: 1.8rem;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px #000;
+}
+#home #temoignages .grid-container h3 {
+  margin-bottom: 0;
 }
 #home #temoignages .grid-container h3,
 #home #temoignages .grid-container p {
@@ -728,6 +805,9 @@ footer .link-legal a:hover {
   grid-template-columns: 2fr 4fr;
 }
 
+#home .card-yellow {
+  padding: 50px;
+}
 #home section {
   display: grid;
 }
@@ -736,12 +816,6 @@ footer .link-legal a:hover {
     grid-template-columns: 1fr !important;
     text-align: center !important;
   }
-  #home section img {
-    border-radius: 10px !important;
-  }
-}
-#home section .text {
-  padding: 50px;
 }
 #home section .grid-container {
   display: grid;
@@ -754,26 +828,17 @@ footer .link-legal a:hover {
 }
 #home section .grid-container .grid-item {
   border-radius: 10px;
-  box-shadow: inset 0 0 20px #000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   padding: 50px 20px;
 }
 #home #hero,
 #home #tarifs-et-forfaits {
   grid-template-columns: 60% 40%;
 }
-#home #hero img,
-#home #tarifs-et-forfaits img {
-  border-radius: 0 10px 10px 0;
-}
 #home #reservation,
 #home #nos-vehicules,
 #home #actualites-et-blog {
   grid-template-columns: 40% 60%;
-}
-#home #reservation img,
-#home #nos-vehicules img,
-#home #actualites-et-blog img {
-  border-radius: 10px 0 0 10px;
 }
 #home #services,
 #home #a-propos,
@@ -976,5 +1041,11 @@ footer .link-legal a:hover {
 }
 
 #legal .card {
-  padding: 50px;
+  justify-content: start;
+}
+#legal h2 {
+  margin-bottom: 10px;
+}
+#legal p {
+  text-align: justify;
 }/*# sourceMappingURL=index.css.map */

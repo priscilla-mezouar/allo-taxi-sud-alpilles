@@ -3,7 +3,7 @@
 echo '<footer>
       <div class="copyright">
         <p>
-          ©2025 - <a href="./index.php">Groupe Allo Taxi Sud</a> - Tous droits
+          ©2025 - <a href="https://allo-taxi-sud.com">Groupe Allo Taxi Sud</a> - Tous droits
           réservés.
         </p>
       </div>

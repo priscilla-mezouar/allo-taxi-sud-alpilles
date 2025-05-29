@@ -5,11 +5,13 @@
 
       .grid-item {
         text-align: center;
+        background: $color1;
         span {
+          background: $white;
           display: flex;
           justify-content: center;
           align-items: center;
-          color: $color1;
+          color: $bg;
           font-size: 1.8rem;
           padding: 20px;
           width: 100px;

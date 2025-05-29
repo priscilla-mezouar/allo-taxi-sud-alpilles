@@ -5,6 +5,26 @@
 
       .grid-item {
         padding: 20px;
+        background: $color1;
+      }
+
+      .temoignages-text {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        flex-wrap: wrap;
+        height: 350px;
+        background: $white;
+        color: $bg;
+        font-size: 1.8rem;
+        padding: 20px;
+        margin: 0 auto;
+        border-radius: 5px;
+        box-shadow: inset 0 0 10px $black;
+      }
+
+      h3 {
+        margin-bottom: 0;
       }
 
       h3,

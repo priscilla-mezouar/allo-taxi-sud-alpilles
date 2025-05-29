@@ -53,7 +53,7 @@
   </head>
   <body id="maintenance">
     <header>
-      <a href="./index.php">
+      <a href="./">
         <div class="logo">
           <img
             src="./assets/images/logo-allo-taxi.png"
