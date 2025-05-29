@@ -134,8 +134,7 @@
           transport simple, pratique et respectueuse de la planète. Nous offrons
           des trajets dans toute la région des Alpilles, en particulier à
           <strong>
-            Tarascon, Fontvieille, Saint-Étienne-du-Grès,
-            Saint-Rémy-de-Provence, et Les Baux-de-Provence </strong
+            Tarascon, Fontvieille et Saint-Étienne-du-Grès</strong
           >.
         </p>
       </section>
