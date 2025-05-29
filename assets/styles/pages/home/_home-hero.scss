@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 600px;
+    min-height: 600px;
     animation: slider 15s infinite linear;
 
     @keyframes slider {
@@ -33,6 +33,7 @@
     }
 
     .text {
+      margin: 50px;
       padding: 50px;
       background: $bg-overlay;
       border-radius: 10px;

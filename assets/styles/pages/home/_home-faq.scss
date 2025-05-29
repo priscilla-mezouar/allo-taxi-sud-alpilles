@@ -13,11 +13,17 @@
       font-weight: bold;
     }
   }
+
   .reponse {
     display: none;
     padding-left: 20px;
     border-left: 1px solid $white;
     padding-bottom: 20px;
+
+    @media screen and (max-width: 1100px) {
+      text-align: left !important;
+    }
+
     p {
       color: $bg-card;
     }
